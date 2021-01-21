@@ -16,10 +16,10 @@ import pages.AfterSign;
 import pages.MainPage;
 import pages.RegisterPage;
 import pages.SignIn;
-import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
+
 public class Sprint1SignInTest extends TestBase {
 	
 	@Test(dataProvider="dataProvider1")
@@ -58,6 +58,7 @@ public class Sprint1SignInTest extends TestBase {
 		AfterSign as = new AfterSign();
 		as.profileIcon.click();
 		as.myProfile.click();
+		BrowserUtils.waitFor(5);
 		WebElement customer=Driver.getDriver().findElement(By.xpath("//h4[@class='kmx-typography--headline-1']"));
 		assertTrue(customer.getText().contains(ConfigReader.getProperty("name")));
 	}

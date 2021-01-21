@@ -1,11 +1,11 @@
 package furkan;
 
+import org.testng.annotations.Test;
+
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import pages.AfterSign;
@@ -15,11 +15,8 @@ import pages.SignIn;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
+public class Sprint1SavedCarTest extends TestBase {
 
-public class Sprint1SavedSearchTest extends TestBase {
-	
-	
-	
 	@Test
 	public void savedSearch() {
 	
@@ -35,7 +32,7 @@ public class Sprint1SavedSearchTest extends TestBase {
 		s.signInButton.click();
 		BrowserUtils.waitFor(10);
 		
-		mp.mainSearchBox.sendKeys(ConfigReader.getProperty("car"),Keys.ENTER);
+		mp.mainSearchBox.sendKeys(ConfigReader.getProperty("save_car"),Keys.ENTER);
 		SearchCar sc = new SearchCar();
 		
 		
@@ -43,27 +40,19 @@ public class Sprint1SavedSearchTest extends TestBase {
 		jsExecutor.executeScript("arguments[0].click();", sc.keepStoreButton);}
 		catch(Exception e) {}
 		
-		
-		
 		sc.zip.click();
 		sc.zip.sendKeys(Keys.BACK_SPACE);
 		sc.zip.sendKeys("76210");
-		sc.savedSearch.click();
-		BrowserUtils.waitForClickablility(sc.saveButton, 5);
-		sc.saveButton.click();
-		String expectedMessage = "Search saved";
-		String actualMessage = sc.searchSavedMessage.getText();
-		soft.assertTrue(expectedMessage.contains(actualMessage));
-		BrowserUtils.waitFor(5);
-		sc.gotIt.click();
+		sc.savedCar.click();
+		BrowserUtils.waitFor(4);
 
 		Driver.getDriver().get(ConfigReader.getProperty("url"));
 		AfterSign as = new AfterSign();
 		as.profileIcon.click();
-		as.savedSearches.click();
-		String car = Driver.getDriver().findElement(By.xpath("//h3[@class='kmx-typography--display-1']")).getText();
+		as.savedCars.click();
+		String car = Driver.getDriver().findElement(By.xpath("//h4[@class='kmx-typography--headline-1']")).getText();
 		System.out.println(car);
-		soft.assertTrue(car.contains(ConfigReader.getProperty("car")));
+		assertTrue(car.contains(ConfigReader.getProperty("save_car")));
 	
 	
 	

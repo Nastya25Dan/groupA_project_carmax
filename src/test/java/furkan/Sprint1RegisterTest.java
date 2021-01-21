@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.MainPage;
 import pages.RegisterPage;
 
-import org.testng.AssertJUnit;
+
 import static org.testng.Assert.*;
 
 import java.util.concurrent.TimeUnit;
@@ -15,14 +15,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
-import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
-
 public class Sprint1RegisterTest extends TestBase {
 	
 	

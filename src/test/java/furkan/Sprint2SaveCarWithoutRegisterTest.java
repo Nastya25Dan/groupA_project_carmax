@@ -2,18 +2,17 @@ package furkan;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.testng.annotations.Test;
 
 import pages.AfterSign;
 import pages.MainPage;
 import pages.SearchCar;
 import utilities.BrowserUtils;
 import utilities.Driver;
+
 public class Sprint2SaveCarWithoutRegisterTest extends TestBase {
 	
 	@Parameters("car")
@@ -39,7 +38,7 @@ public class Sprint2SaveCarWithoutRegisterTest extends TestBase {
 		BrowserUtils.waitFor(5);
 		mp.saveButton.click();
 		String savedCar=Driver.getDriver().findElement(By.xpath("//h2[@class='kmx-vehicle-tile__ymmt']")).getText();
-		AssertJUnit.assertTrue(savedCar.contains(car));
+		assertTrue(savedCar.contains(car));
 	}
 
 }
