@@ -1,14 +1,17 @@
-package tests;
+package nihal;
 
 import org.testng.annotations.Test;
 import pages.NihalPage;
+import tests.TestBase;
 import utilities.BrowserUtils;
-import static org.testng.Assert.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class NihalFooterTest extends TestBase{
+import static org.testng.Assert.assertEquals;
+
+public class Sprint1FooterTest extends TestBase {
 
     @Test(priority = 1,groups = "A")
 

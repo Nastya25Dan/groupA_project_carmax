@@ -1,14 +1,17 @@
-package tests;
+package nihal;
+
 import org.testng.annotations.Test;
 import pages.NihalPage;
+import tests.TestBase;
 import utilities.BrowserUtils;
 
 import java.io.IOException;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 
-public class NihalHowItWorksTest extends TestBase{
+public class Sprint1HowItWorksTest extends TestBase {
 
     @Test(priority = 4,groups = "A")
     public void HowItWorks(){

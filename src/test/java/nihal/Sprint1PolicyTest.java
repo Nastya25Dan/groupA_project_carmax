@@ -1,11 +1,13 @@
-package tests;
+package nihal;
 
 import org.testng.annotations.Test;
 import pages.NihalPage;
-import static org.testng.Assert.*;
+import tests.TestBase;
 import utilities.BrowserUtils;
 
-public class NihalPrivacyPolicyTest extends TestBase{
+import static org.testng.Assert.assertEquals;
+
+public class Sprint1PolicyTest extends TestBase {
 
     @Test(priority = 2,groups = "A")
     public void checkPrivacyPolicy(){

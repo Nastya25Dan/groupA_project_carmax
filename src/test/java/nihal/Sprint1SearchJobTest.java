@@ -1,11 +1,12 @@
-package tests;
+package nihal;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.NihalPage;
+import tests.TestBase;
 import utilities.BrowserUtils;
 
-public class NihalSearchJobTest extends TestBase{
+public class Sprint1SearchJobTest extends TestBase {
 
     @Test(dataProvider = "job type",priority = 6,groups = "A")
     public void searchJob(String job){

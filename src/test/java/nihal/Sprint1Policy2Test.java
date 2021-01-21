@@ -1,12 +1,15 @@
-package tests;
+package nihal;
+
 import org.testng.annotations.Test;
 import pages.NihalPage;
-import static org.testng.Assert.*;
+import tests.TestBase;
 import utilities.BrowserUtils;
 
 import java.io.IOException;
 
-public class NihalPrivacyPolicy2Test extends TestBase{
+import static org.testng.Assert.assertTrue;
+
+public class Sprint1Policy2Test extends TestBase {
     @Test(priority = 3,groups = "A")
     public void ContactUs() throws IOException {
         NihalPage m= new NihalPage();
