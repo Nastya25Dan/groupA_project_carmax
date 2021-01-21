@@ -1,4 +1,4 @@
-package tests;
+package furkan;
 
 import static org.testng.Assert.*;
 
@@ -20,8 +20,7 @@ import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
-
-public class SignInTest extends TestBase {
+public class Sprint1SignInTest extends TestBase {
 	
 	@Test(dataProvider="dataProvider1")
 	public void negativeSignIn(String email,String password) {

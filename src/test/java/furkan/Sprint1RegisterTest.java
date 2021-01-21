@@ -1,4 +1,4 @@
-package tests;
+package furkan;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,7 +23,7 @@ import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class RegisterTest extends TestBase {
+public class Sprint1RegisterTest extends TestBase {
 	
 	
 	@Test(dataProvider="dataProvider")

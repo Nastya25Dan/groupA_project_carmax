@@ -1,30 +1,35 @@
-package tests;
+package furkan;
 
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.ITest;
 import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
-import static org.testng.Assert.*;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
+
 public abstract class TestBase {
-
-
+    
+    
+    
+    
     protected WebDriver driver;
     protected Actions actions;
     protected JavascriptExecutor jsExecutor;
@@ -44,7 +49,7 @@ public abstract class TestBase {
         reporter.attachReporter(htmlReporter);
         
         //set report configurations
-        reporter.setSystemInfo("QA Automation Tester", "Barack Obama");
+        reporter.setSystemInfo("QA Automation Tester", "Team A");
         reporter.setSystemInfo("Environment", "TEST/QA");
         reporter.setSystemInfo("browser", ConfigReader.getProperty("browser"));
         
@@ -52,10 +57,11 @@ public abstract class TestBase {
     
     
     
+    @Parameters("browser")
     @BeforeMethod (alwaysRun = true)
-    public void setupMethod(ITestContext test) {
+    public void setupMethod(@Optional String browser) {
         
-        driver = Driver.getDriver();
+        driver = Driver.getDriver(browser);
         driver.manage().timeouts().
             implicitlyWait(Long.parseLong(ConfigReader.getProperty("implicitTimeout")), TimeUnit.SECONDS);
         driver.manage().window().maximize();

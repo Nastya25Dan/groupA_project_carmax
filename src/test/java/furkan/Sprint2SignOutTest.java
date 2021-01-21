@@ -1,27 +1,27 @@
-package tests;
-
-import static org.testng.Assert.assertTrue;
+package furkan;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-           
+
 import pages.AfterSign;
 import pages.MainPage;
 import pages.SignIn;
-import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
-
-public class SignOutTest extends TestBase {
-
+public class Sprint2SignOutTest extends TestBase {
+	
+	
+	@Parameters("browser")
 	@Test
 public void signOut() {
 		
-		Driver.getDriver().get(ConfigReader.getProperty("url"));
 		MainPage mp = new MainPage();
 		mp.profileIcon.click();
 		BrowserUtils.waitForClickablility(mp.signIn, 10);
@@ -30,11 +30,11 @@ public void signOut() {
 		s.userEmail.sendKeys(ConfigReader.getProperty("email"));
 		s.userPassword.sendKeys(ConfigReader.getProperty("password"));
 		s.signInButton.click();
-		AfterSign as = new AfterSign();
-		BrowserUtils.waitForClickablility(as.profileIcon, 7);
-		as.profileIcon.click();
-		as.signOut.click();
 		BrowserUtils.waitFor(6);
+		mp.profileIcon.click();
+		AfterSign as = new AfterSign();
+		as.signOut.click();
+		BrowserUtils.waitFor(3);
 		mp.profileIcon.click();
 		List<WebElement>list = Driver.getDriver().findElements(By.xpath("//li[@class='header-footer-menu-list-item']"));
 		int expectedSize=3;

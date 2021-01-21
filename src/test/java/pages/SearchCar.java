@@ -45,6 +45,9 @@ public class SearchCar {
 		@FindBy (xpath = "(//button[@class='kmx-button kmx-button--tertiary kmx-button--flat'])[1]")
 		public WebElement keepStoreButton;
 		
+		@FindBy (xpath = "//button[@class='watchlist-button got-it-button kmx-button kmx-button--primary']")
+		public WebElement acceptMessage;
+		
 		
 		
 		

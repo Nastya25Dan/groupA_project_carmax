@@ -1,4 +1,4 @@
-package tests;
+package furkan;
 
 import static org.testng.Assert.assertTrue;
 
@@ -17,7 +17,7 @@ import utilities.BrowserUtils;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class SavedSearchTest extends TestBase {
+public class Sprint1SavedSearchTest extends TestBase {
 	
 	
 	
