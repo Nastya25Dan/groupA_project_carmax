@@ -58,4 +58,10 @@ public class Nihal2Page extends TestBase {
     @FindBy(xpath = "//a[contains(text(),'find a shop near you')]")
     public WebElement findShop;
 
+    @FindBy(xpath = "//a[text()='View All Inventory']")
+    public WebElement viewInventory;
+
+    @FindBy(xpath = "//a[text()='Investor Relations']")
+    public WebElement investorRelations;
+
 }

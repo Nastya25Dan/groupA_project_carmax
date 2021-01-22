@@ -10,7 +10,7 @@ import utilities.BrowserUtils;
 import static org.testng.Assert.assertTrue;
 
 public class Sprint2FindStoreTest extends TestBase {
-    @Test(dataProvider = "zipcode")
+    @Test
     public void searchStore(String zip){
         Nihal2Page n = new Nihal2Page();
         BrowserUtils.scroll(0,100);
