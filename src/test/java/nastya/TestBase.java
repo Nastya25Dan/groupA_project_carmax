@@ -1,4 +1,4 @@
-package tests;
+package nastya;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

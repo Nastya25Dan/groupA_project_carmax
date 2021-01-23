@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +14,9 @@ public class NastyaPage{
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//div[@class='carousel__slide tns-item tns-slide-active']")
+    public List<WebElement> typeCarousel;
+    
    @FindBy(xpath = "(//button[@class='vehicle-type-tile'])[1]")
     public WebElement suvButton;
    
@@ -42,6 +47,27 @@ public class NastyaPage{
     @FindBy (xpath = "//section[@class='mdc-dialog__body']")
     public WebElement infoMessage;
     
+    @FindBy (id = "budget-search-calculator__monthy-payment")
+    public WebElement monthlyPayment;
+    
+    @FindBy (id = "budget-search-calculator__down-payment")
+    public WebElement downPayment;
+    
+    @FindBy (id = "credit-rating-select")
+    public WebElement creditScoreVeryGood;
+    
+    @FindBy (xpath = "//div[@class='calculated-value']")
+    public WebElement yourBudget;
+    
+    @FindBy (id = "calc-button-shop-cars_tablet-mobile")
+    public WebElement seeCars;
+    
+    @FindBy (xpath = "(//div[@role='dialog'])[4]")
+    public WebElement popupMessageStore;
+    
+    
+    
+    @FindBy (xpath = "kmx-button kmx-button--tertiary kmx-button--flat")
+    public WebElement keepTheStore;
    
-
 }
