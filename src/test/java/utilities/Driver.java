@@ -22,7 +22,7 @@ public class Driver {
 	private Driver() {
 	}
 
-	public static WebDriver getDriver(String browser) {
+	public static synchronized WebDriver getDriver(String browser) {
 
 		if (drivers.get() == null) {
 			if (browser == null) {

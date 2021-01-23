@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import pages.NastyaPage;
+import pages.BudgetPage;
 import utilities.BrowserUtils;
 
 public class Sprint1Tests extends TestBase{
@@ -19,23 +19,23 @@ public class Sprint1Tests extends TestBase{
 	@Test
 	public void getCarType() {
 		
-		NastyaPage n = new NastyaPage();
+		BudgetPage budgetPage = new BudgetPage();
 		
 		BrowserUtils.scroll(0, 500);
-		n.suvButton.click();
-		n.crossover.click();
+		budgetPage.suvButton.click();
+		budgetPage.crossover.click();
 
 	}
 	
 	@Test
 	public void dropdownTest() {
 
-		NastyaPage n = new NastyaPage();
+		BudgetPage budgetPage = new BudgetPage();
 
 		BrowserUtils.scroll(0, 800);
 		BrowserUtils.waitForPageToLoad(2000);
 
-		Select select = new Select(n.dropdownMenu);
+		Select select = new Select(budgetPage.dropdownMenu);
 
 		System.out.println(select.getFirstSelectedOption().getText());
 		List<WebElement> options = select.getOptions();
@@ -58,7 +58,7 @@ public class Sprint1Tests extends TestBase{
 	@Test(dataProvider = "year")
 	public void getPrice(String year) {
 		
-		NastyaPage n = new NastyaPage();
+		BudgetPage n = new BudgetPage();
 		
 		BrowserUtils.scroll(0, 2000);
 		BrowserUtils.waitForVisibility(n.yearInput, 3000);
@@ -75,7 +75,7 @@ public class Sprint1Tests extends TestBase{
 	@Test
 	public void test1() {
 		
-		NastyaPage n = new NastyaPage();
+		BudgetPage n = new BudgetPage();
 		
 		BrowserUtils.scroll(0, 2300);
 		BrowserUtils.waitForPageToLoad(2000);
@@ -85,7 +85,7 @@ public class Sprint1Tests extends TestBase{
 	@Test
 	public void test2() {
 		
-		NastyaPage n = new NastyaPage();
+		BudgetPage n = new BudgetPage();
 		
 		n.researchMore.click();
 		String actual = driver.getCurrentUrl();
@@ -96,7 +96,7 @@ public class Sprint1Tests extends TestBase{
 	@Test
 	public void clickInfoButton() {
 
-		NastyaPage n = new NastyaPage();
+		BudgetPage n = new BudgetPage();
 
 		n.infoButton.click();
 		Assert.assertTrue(n.infoMessage.isEnabled());

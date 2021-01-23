@@ -1,10 +1,12 @@
 package nastya;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import pages.NastyaPage;
+import pages.BudgetPage;
 import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.Driver;
@@ -15,37 +17,52 @@ public class Sprint2BudgetSearchTest extends TestBase{
 	@Test
 	public void seeMyBudgetCar() {
 		
-		NastyaPage n = new NastyaPage();
-		
-		n.suvButton.click();
-		
+		BudgetPage budgetPage = new BudgetPage();
 		BrowserUtils.scroll(0, 500);
-		BrowserUtils.waitForVisibility(n.monthlyPayment, 3000);
-		BrowserUtils.hover(n.monthlyPayment);
-		n.monthlyPayment.sendKeys(Keys.ENTER);
-		n.monthlyPayment.sendKeys(Keys.BACK_SPACE);
-		n.monthlyPayment.sendKeys(Keys.BACK_SPACE);
-		n.monthlyPayment.sendKeys(Keys.BACK_SPACE);
-		n.monthlyPayment.sendKeys("555");
+		budgetPage.suvButton.click();
+
 		
-		BrowserUtils.hover(n.downPayment);
-		n.downPayment.sendKeys(Keys.ENTER);
-		n.downPayment.sendKeys(Keys.BACK_SPACE);
-		n.downPayment.sendKeys(Keys.BACK_SPACE);
-		n.downPayment.sendKeys(Keys.BACK_SPACE);
-		n.downPayment.sendKeys(Keys.BACK_SPACE);
-		n.downPayment.sendKeys("3500");
-		
-		Select select = new Select(n.creditScoreVeryGood);
+		BrowserUtils.waitForVisibility(budgetPage.monthlyPayment, 3000);
+		BrowserUtils.hover(budgetPage.monthlyPayment);
+		budgetPage.monthlyPayment.sendKeys(Keys.ENTER);
+		budgetPage.monthlyPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.monthlyPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.monthlyPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.monthlyPayment.sendKeys("555");
+
+		BrowserUtils.hover(budgetPage.downPayment);
+		budgetPage.downPayment.sendKeys(Keys.ENTER);
+		budgetPage.downPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.downPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.downPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.downPayment.sendKeys(Keys.BACK_SPACE);
+		budgetPage.downPayment.sendKeys("3500");
+
+		Select select = new Select(budgetPage.creditScoreVeryGood);
 		select.selectByVisibleText("Very Good (740-799 FICO® Score)");
-		
-		String budget = n.yourBudget.getText();
-		BrowserUtils.hover(n.seeCars);
-		n.seeCars.click();
-		
-		BrowserUtils.hover(n.keepTheStore);
-		n.keepTheStore.click();
-		
+		BrowserUtils.waitForPageToLoad(5);
+
+		BrowserUtils.hover(budgetPage.seeCars);
+		budgetPage.seeCars.click();
+
+		try {
+			BrowserUtils.waitForClickablility(budgetPage.keepStore, 10);
+			jsExecutor.executeScript("arguments[0].click();", budgetPage.keepStore);
+		} catch (Exception e) {
+		}
+
+		String title = Driver.getDriver().getTitle().replaceAll(",$", "");
+
+		String filterType = budgetPage.filterType.getText();
+
+		String filterAmount = budgetPage.filterAmount.getText().replaceAll(",$", "");
+
+		System.out.println(title);
+		System.out.println(filterType);
+		System.out.println(filterAmount);
+
+		//assertTrue(title.contains(filterType));
+		assertTrue(title.contains(filterAmount));
 	}
 
 }
