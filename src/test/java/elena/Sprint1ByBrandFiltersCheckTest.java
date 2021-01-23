@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
 
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-import tests.TestBase;
+
 
 public class Sprint1ByBrandFiltersCheckTest extends TestBase{
 	@Test(groups = {"smoke"})

@@ -1,35 +1,46 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.By;
+
 import org.testng.annotations.Test;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-import tests.TestBase;
+
 import utilities.BrowserUtils;
 
-public class Sprint2ShopByYearTest extends TestBase{
+public class Sprint2EngineCheckTest extends TestBase{
 	@Test
-	public void shopByYear() {
+	public void engineCheck() {
 		
 		LoginPage lp = new LoginPage();
 		CarsChoicesPage cc = new CarsChoicesPage();
+		
 		lp.shopButton.click();
 		
-		lp.shopByYear.click();
+		
+		BrowserUtils.waitForPageToLoad(5000);
+		
+		lp.nextButton.click();
+		
+		lp.dieselField.click();
 		
 		try{BrowserUtils.waitForClickablility(cc.popUpHandle, 10);
 		jsExecutor.executeScript("arguments[0].click();", cc.popUpHandle);}
 		catch(Exception e) {}
 		
 		
-		String actualYear = cc.year.getText().toString();
+		cc.dieselCarOption.click();
+		
+		cc.ecoCarFeatures.click();
+		String d = cc.dieselEngine.getText().toString();
 
-		String expectedYear = "2019";
-		assertEquals(actualYear,expectedYear);
+		
+		String expectedEngine = "Turbo Diesel Engine";
+		assertEquals(d, expectedEngine, "Engine didn't match");
+		
+		
+		
 		
 	}
-	
 }

@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
-import tests.TestBase;
+
 
 public class Sprint1SuvsURLCheckTest extends TestBase{
 	@Test

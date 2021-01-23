@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -19,7 +19,6 @@ import com.github.javafaker.Faker;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.Driver;
 

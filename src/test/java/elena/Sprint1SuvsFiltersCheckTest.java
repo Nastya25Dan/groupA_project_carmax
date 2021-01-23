@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-import tests.TestBase;
 import utilities.BrowserUtils;
 import utilities.Driver;
 

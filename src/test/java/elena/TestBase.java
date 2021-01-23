@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

@@ -1,11 +1,11 @@
-package Elena;
+package elena;
 
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
-import tests.TestBase;
+
 
 public class Sprint1ByBrandCheckTest extends TestBase{
 	@Test

@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,7 +10,7 @@ import com.github.javafaker.Faker;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-import tests.TestBase;
+
 import utilities.BrowserUtils;
 
 public class Sprint2AgeCheckForLoanTest extends TestBase{

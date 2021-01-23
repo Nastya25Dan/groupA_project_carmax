@@ -1,4 +1,4 @@
-package Elena;
+package elena;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-import tests.TestBase;
+
 import utilities.BrowserUtils;
 
 public class Sprint2DataPrTitleCheckTest extends TestBase{
