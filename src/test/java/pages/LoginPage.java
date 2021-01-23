@@ -12,8 +12,14 @@ public class LoginPage {
 		PageFactory.initElements(Driver.getDriver(), this);  
 	}
 	
+	@FindBy (id = "shop-by-type-carousel__next")
+	public WebElement nextButton;
+	
+	@FindBy (xpath = "(//img[@class='icon-tile-img loaded tns-complete'])[9]")
+	public WebElement dieselField;	
 	
 	
+			
 	@FindBy (xpath = "(//img[@class='icon-tile-img loaded tns-complete'])[1]")
 	public WebElement suvsField;
 	
@@ -26,10 +32,15 @@ public class LoginPage {
 	@FindBy (xpath = "//a[@id='header-mobile-drawer-focus-start']")
 	public WebElement shopButton;
 	
+	@FindBy (xpath = "(//*[@class='shop-by-lifestyle-img'])[2]")
+	public WebElement ecoFriendly;
 
 
+	@FindBy (xpath = "//a[@href='/cars/2019']")
+	public WebElement shopByYear;
 	
-	
+	@FindBy (xpath = "(//*[@class='shop-by-lifestyle-img'])[1]")
+	public WebElement commuterType;
 	
 
 	

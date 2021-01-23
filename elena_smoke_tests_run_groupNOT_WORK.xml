@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Running multiple methods">
+  
+  
+  <test thread-count="5" name=" Running multiple methods">
+  
+  <groups>
+  		<run>
+  		
+  			<include name="smoke"/>
+  		
+  		</run>
+  
+  
+  </groups>
+  
+    
+   
+   
+   
+   <classes>
+   
+   	<class name="Elena.Sprint1ByBrandFiltersCheckTest" />
+   	<class name="Elena.Sprint1SuvsFiltersCheckTest" />
+   	<class name="Elena.Sprint2AgeCheckForLoanTest" />
+   	<class name="Elena.Sprint2EcoFriendlyTest" />
+   	
+   	 
+   </classes>
+    
+   
+    
+  </test> <!-- Test -->
+  
+  
+  
+   
+  
+  
+</suite> <!-- Suite -->

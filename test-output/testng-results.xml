@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38522" started-at="2021-01-23T01:42:24 EST" finished-at="2021-01-23T01:43:02 EST">
+    <groups>
+      <group name="smoke">
+        <method signature="Sprint2EcoFriendlyTest.ecoFriendly()[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e]" name="ecoFriendly" class="Elena.Sprint2EcoFriendlyTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="38522" started-at="2021-01-23T01:42:24 EST" finished-at="2021-01-23T01:43:02 EST">
+      <class name="Elena.Sprint2EcoFriendlyTest">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e]" name="setUpReport" is-config="true" duration-ms="261" started-at="2021-01-23T01:42:23 EST" finished-at="2021-01-23T01:42:24 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method status="PASS" signature="setupMethod(org.testng.ITestContext)[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e]" name="setupMethod" is-config="true" duration-ms="8784" started-at="2021-01-23T01:42:24 EST" finished-at="2021-01-23T01:42:32 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@619bd14c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="ecoFriendly()[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e]" name="ecoFriendly" duration-ms="27973" started-at="2021-01-23T01:42:32 EST" finished-at="2021-01-23T01:43:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecoFriendly -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e]" name="teardownMethod" is-config="true" duration-ms="1733" started-at="2021-01-23T01:43:00 EST" finished-at="2021-01-23T01:43:02 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ecoFriendly status=SUCCESS method=Sprint2EcoFriendlyTest.ecoFriendly()[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:Elena.Sprint2EcoFriendlyTest@49c43f4e]" name="tearDownReport" is-config="true" duration-ms="334" started-at="2021-01-23T01:43:02 EST" finished-at="2021-01-23T01:43:03 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- Elena.Sprint2EcoFriendlyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
