@@ -12,7 +12,9 @@ import pages.LoginPage;
 import utilities.BrowserUtils;
 
 public class Sprint2DataPrTitleCheckTest extends TestBase{
-	@DataProvider (name="brand")
+	
+	
+	@DataProvider (name="brand", parallel = true)
 	public Object [][] getData(){
 		Object [][] data = new Object[][] {
 			{"GMC"},

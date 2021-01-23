@@ -42,13 +42,14 @@ public abstract class TestBase {
         reporter = new ExtentReports();
         String path = System.getProperty("user.dir") + "/test-output/extentReports/index.html";
         htmlReporter = new ExtentSparkReporter(path);
-        htmlReporter.config().setReportName("WEB ORDERS AUTOMATION TESTS");
+        htmlReporter.config().setReportName("Elena's AUTOMATION TESTS");
         
         reporter.attachReporter(htmlReporter);
         
         //set report configurations
         reporter.setSystemInfo("QA Automation Tester", "Barack Obama");
         reporter.setSystemInfo("Environment", "TEST/QA");
+        reporter.setSystemInfo("OS", System.getProperty("os.name"));
         reporter.setSystemInfo("browser", ConfigReader.getProperty("browser"));
         
     }
