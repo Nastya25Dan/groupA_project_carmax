@@ -39,7 +39,7 @@ public abstract class TestBase {
     protected static ExtentTest logger;  // needs to be initialized in each test
     protected static int count;
     
-    @BeforeSuite
+    @BeforeSuite(alwaysRun=true)
     public void setUpReport() {
         reporter = new ExtentReports();
         String path = System.getProperty("user.dir") + "/test-output/extentReports/index.html";
@@ -56,7 +56,7 @@ public abstract class TestBase {
         
     }
     
-    @BeforeGroups (groups = {"smoke"})
+    @BeforeGroups ( alwaysRun=true, groups = {"smoke"})
 	public void setupGroup() {
 		System.out.println("Setting up SMOKE tests");
 	}

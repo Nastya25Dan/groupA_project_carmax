@@ -24,6 +24,16 @@ public class SearchCar {
 		@FindBy (xpath = "(//button[@aria-label='Save this car'])[1]")
 		public WebElement savedCar;
 		
+		@FindBy (xpath = "(//button[@aria-label='Save this car'])[2]")
+		public WebElement savedCar2;
+		
+		@FindBy (xpath = "(//span[@class='year-make'])[1]")
+		public WebElement savedCarName;
+		
+		@FindBy (xpath = "(//span[@class='year-make'])[2]")
+		public WebElement savedCarName2;
+		
+		
 		@FindBy (xpath = "//button[@class='kmx-button kmx-button--secondary save-search--link']")
 		public WebElement savedSearch;
 		

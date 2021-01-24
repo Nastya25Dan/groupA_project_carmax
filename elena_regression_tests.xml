@@ -15,6 +15,7 @@
   <class name="elena.Sprint2EcoFriendlyTest"/>
   <class name="elena.Sprint2EngineCheckTest"/>
   <class name="elena.Sprint2ShopByYearTest"/>
+  <class name="elena.Sprint2DataPrTitleCheckTest"/>
 
   
   </classes>

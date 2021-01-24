@@ -29,6 +29,7 @@ public class Sprint2SaveCarWithoutRegisterTest extends TestBase {
 		catch(Exception e) {}
 		
 		sc.savedCar.click();
+		sc.savedCar2.click();
 		
 		try{BrowserUtils.waitForClickablility(sc.acceptMessage, 5);
 		jsExecutor.executeScript("arguments[0].click();", sc.acceptMessage);}
