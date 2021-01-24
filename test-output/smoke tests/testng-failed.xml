@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smoke tests]">
+  <test thread-count="5" name="smoke tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="elena.Sprint1ByBrandFiltersCheckTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="byBrandFiltersCheck"/>
+          <include name="teardownMethod"/>
+        </methods>
+      </class> <!-- elena.Sprint1ByBrandFiltersCheckTest -->
+      <class name="elena.Sprint1SuvsFiltersCheckTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="suvsFiltersCheck"/>
+          <include name="teardownMethod"/>
+        </methods>
+      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
+      <class name="elena.Sprint2AgeCheckForLoanTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="ageCheckForLoan"/>
+          <include name="teardownMethod"/>
+        </methods>
+      </class> <!-- elena.Sprint2AgeCheckForLoanTest -->
+      <class name="elena.Sprint2EcoFriendlyTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="teardownMethod"/>
+          <include name="ecoFriendly"/>
+        </methods>
+      </class> <!-- elena.Sprint2EcoFriendlyTest -->
+    </classes>
+  </test> <!-- smoke tests(failed) -->
+</suite> <!-- Failed suite [smoke tests] -->

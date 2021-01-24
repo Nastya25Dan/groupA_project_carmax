@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterGroups;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
@@ -54,12 +56,15 @@ public abstract class TestBase {
         
     }
     
-
+    @BeforeGroups (groups = {"smoke"})
+	public void setupGroup() {
+		System.out.println("Setting up SMOKE tests");
+	}
 	
     
     @BeforeMethod (alwaysRun = true)
-    @Parameters ("carmodel")
-    public void setupMethod(@Optional String carmodel) {
+    @Parameters ("cartype")
+    public void setupMethod(@Optional String cartype) {
         
         driver = Driver.getDriver();
         driver.manage().timeouts().
@@ -73,6 +78,16 @@ public abstract class TestBase {
         logger = reporter.createTest("TEST "+ count + " created at: " + date );
         count++;
     }
+    
+    
+	
+	
+	@AfterGroups (groups = {"smoke"})
+	public void tearDownGroup() {
+		System.out.println("Tearing down SMOKE tests");
+	}
+    
+    
     
     @AfterMethod (alwaysRun = true)
     public void teardownMethod(ITestResult testResult) throws IOException {

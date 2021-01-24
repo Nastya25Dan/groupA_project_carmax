@@ -8,42 +8,71 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Running multiple methods</th></tr>
-<tr><td><a href="#t0"> Running multiple methods</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">47,000</td><td>smoke</td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">266,095</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Running multiple methods</th></tr></tbody><tbody id="t0"><tr><th colspan="4"> Running multiple methods &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">elena.Sprint1ByBrandFiltersCheckTest</td><td><a href="#m0">setupMethod</a></td><td rowspan="1">1611423005741</td><td rowspan="1">11764</td></tr><tr class="failedodd"><td rowspan="1">elena.Sprint1SuvsFiltersCheckTest</td><td><a href="#m1">setupMethod</a></td><td rowspan="1">1611423018237</td><td rowspan="1">10405</td></tr><tr class="failedeven"><td rowspan="1">elena.Sprint2AgeCheckForLoanTest</td><td><a href="#m2">setupMethod</a></td><td rowspan="1">1611423030286</td><td rowspan="1">7597</td></tr><tr class="failedodd"><td rowspan="1">elena.Sprint2EcoFriendlyTest</td><td><a href="#m3">setupMethod</a></td><td rowspan="1">1611423040128</td><td rowspan="1">11557</td></tr><tr><th colspan="4"> Running multiple methods &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">elena.Sprint1ByBrandFiltersCheckTest</td><td><a href="#m4">byBrandFiltersCheck</a></td><td rowspan="1">1611423017520</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">elena.Sprint1SuvsFiltersCheckTest</td><td><a href="#m5">suvsFiltersCheck</a></td><td rowspan="1">1611423028646</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">elena.Sprint2AgeCheckForLoanTest</td><td><a href="#m6">ageCheckForLoan</a></td><td rowspan="1">1611423037885</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">elena.Sprint2EcoFriendlyTest</td><td><a href="#m7">ecoFriendly</a></td><td rowspan="1">1611423051687</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">elena.Sprint2DataPrTitleCheckTest</td><td><a href="#m0">titleCheck</a></td><td rowspan="1">1611467301817</td><td rowspan="1">10156</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">elena.Sprint2DataPrTitleCheckTest</td><td><a href="#m1">titleCheck</a></td><td rowspan="5">1611467320969</td><td rowspan="5">40259</td></tr><tr class="passedeven"><td><a href="#m2">titleCheck</a></td></tr><tr class="passedeven"><td><a href="#m3">titleCheck</a></td></tr><tr class="passedeven"><td><a href="#m4">titleCheck</a></td></tr><tr class="passedeven"><td><a href="#m5">titleCheck</a></td></tr></tbody>
 </table>
-<h2> Running multiple methods</h2><h3 id="m0">elena.Sprint1ByBrandFiltersCheckTest#setupMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>null</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
+<h2>Default test</h2><h3 id="m0">elena.Sprint2DataPrTitleCheckTest#titleCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Dodge</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&apos;shop-by-lifestyle-img&apos;])[2]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THOMAS-PC&apos;, ip: &apos;192.168.200.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 49193986acb24506cb58e30dd0b56fa8
+*** Element info: {Using=xpath, value=(//*[@class=&apos;shop-by-lifestyle-img&apos;])[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at elena.Sprint2DataPrTitleCheckTest.titleCheck(Sprint2DataPrTitleCheckTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">elena.Sprint1SuvsFiltersCheckTest#setupMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>null</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">elena.Sprint2AgeCheckForLoanTest#setupMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>null</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">elena.Sprint2EcoFriendlyTest#setupMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>null</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">elena.Sprint1ByBrandFiltersCheckTest#byBrandFiltersCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">elena.Sprint1SuvsFiltersCheckTest#suvsFiltersCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">elena.Sprint2AgeCheckForLoanTest#ageCheckForLoan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">elena.Sprint2EcoFriendlyTest#ecoFriendly</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at elena.TestBase.setupMethod(TestBase.java:72)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">elena.Sprint2DataPrTitleCheckTest#titleCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Ford</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">elena.Sprint2DataPrTitleCheckTest#titleCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>GMC</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">elena.Sprint2DataPrTitleCheckTest#titleCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Toyota</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">elena.Sprint2DataPrTitleCheckTest#titleCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Chevrolet</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">elena.Sprint2DataPrTitleCheckTest#titleCheck</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Lexus</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
