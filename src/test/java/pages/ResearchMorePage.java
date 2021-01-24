@@ -1,5 +1,9 @@
 package pages;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.BrowserUtils;
@@ -11,7 +15,12 @@ public class ResearchMorePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 	
-	ResearchMorePage m = new ResearchMorePage();
-	//BrowserUtils.scroll(0, 1500);
-
+	@FindBy (xpath = "//a[@href='/articles']")
+	public WebElement researchButton;
+	
+	@FindBy (xpath = "//section[@class='article-hero-banner-card']")
+	public List<WebElement> bannerLinks;
+	
+	@FindBy (xpath = "//span[@data-prop='article-hero-banner-card--subheader']")
+	public List<WebElement> subHeaders;
 }
