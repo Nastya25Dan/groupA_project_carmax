@@ -4,13 +4,20 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+      <class name="furkan.Sprint2TradeInTest">
+        <methods>
+          <include name="setUpReport"/>
+=======
+<<<<<<< HEAD
       <class name="nastya.Sprint2TradeInTest">
 =======
       <class name="elena.Sprint2DataPrTitleCheckTest">
 >>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
         <methods>
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
+          <include name="tradeIn"/>
           <include name="teardownMethod"/>
 <<<<<<< HEAD
           <include name="tearDownReport"/>
@@ -22,8 +29,12 @@
           <include name="titleCheck" invocation-numbers="2"/>
           <include name="setUpReport"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- furkan.Sprint2TradeInTest -->
+=======
       </class> <!-- elena.Sprint2DataPrTitleCheckTest -->
 >>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
