@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="furkan.SavedCarTest">
+      <class name="furkan.Sprint2TradeInTest">
         <methods>
-          <include name="savedSearch"/>
           <include name="setUpReport"/>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
+          <include name="tradeIn"/>
           <include name="teardownMethod"/>
         </methods>
-      </class> <!-- furkan.SavedCarTest -->
+      </class> <!-- furkan.Sprint2TradeInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

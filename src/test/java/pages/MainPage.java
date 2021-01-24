@@ -37,6 +37,43 @@ public class MainPage {
 	@FindBy (id="header-inventory-search")
 	public WebElement mainSearchBox;
 	
+	@FindBy (id="appraisal-form-year")
+	public WebElement tradeInYear;
+	
+	@FindBy (xpath="(//select[@class='mdc-select__native-control'])[2]")
+	public WebElement tradeInMake;
+	
+	@FindBy (xpath="(//select[@class='mdc-select__native-control'])[3]")
+	public WebElement tradeInModel;
+	
+	@FindBy (id="appraisal-form-mileage")
+	public WebElement tradeInMileage;
+	
+	@FindBy (id="appraisal-form-submit")
+	public WebElement tradeInSubmitButton;
+	
+	@FindBy (xpath="//h3[@class='vehicle-found-heading kmx-typography--display-2']")
+	public WebElement tradeInResult;
+	
+	@FindBy (xpath="//img[@src='/home/images/home/appraisal-form/mini-cooper.png']")
+	public WebElement tradeInSection;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
