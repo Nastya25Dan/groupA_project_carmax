@@ -5,7 +5,12 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.util.Strings;
@@ -20,24 +25,31 @@ public class Sprint2TradeInTest extends TestBase{
 	public void tradeYourCar(String year, String make, String model, String mileage) {
 		
 		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
+				.withTimeout(10,TimeUnit.SECONDS).pollingEvery(2,TimeUnit.SECONDS)
+				.ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
 		TradeInPage tradeIn = new TradeInPage();
 		BrowserUtils.scroll(0, 1500);
 		tradeIn.yearBox.sendKeys(year);
-		(tradeIn.makeBox).click();
-		tradeIn.makeBox.sendKeys(make);
-//		Select s = new Select(tradeIn.makeBox);
-//		s.selectByVisibleText(make);
+//		tradeIn.makeBox.click();
+//		tradeIn.makeBox.sendKeys(make);
+		
+	//	Driver.getDriver().navigate().refresh();
+		BrowserUtils.waitFor(5);
+		Select s = new Select(tradeIn.makeBox);
+	
+			s.selectByVisibleText(make);
+		
 		
 		/*org.openqa.selenium.support.ui.UnexpectedTagNameException:
 		Element should have been "select" but was "input"*/
 		
-//		Select s1 = new Select(tradeIn.modelBox);
-//		s1.selectByVisibleText(model);
+		Select s1 = new Select(tradeIn.modelBox);
+		s1.selectByVisibleText(model);
 
-		tradeIn.modelBox.click();
-		tradeIn.modelBox.sendKeys(model);
-		
+//		tradeIn.modelBox.click();
+//		tradeIn.modelBox.sendKeys(model);
+		tradeIn.mileageBox.click();
 		tradeIn.mileageBox.sendKeys(mileage);
 		tradeIn.seeYours.click();
 		String result = tradeIn.result.getText();
@@ -51,8 +63,7 @@ public class Sprint2TradeInTest extends TestBase{
 	public Object [][] dataProvider(){
 		
 		return new Object[][] {
-		{"2013", "Volkswagen", "Jetta", "190000"}
-		,
+		{"2013", "Volkswagen", "Jetta", "190000"},
 		{"2015", "Honda", "Civic", "9000"},
 		{"2009", "Mercedes-Benz", "ML550", "7000"}
 		};

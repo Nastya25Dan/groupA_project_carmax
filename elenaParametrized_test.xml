@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Running parametrized test">
+
+
+	<test thread-count="5" name=" GMC test">
+
+		<parameter name="carmodel" value="GMC" />
+		<classes>
+			<class name="elena.Sprint2DataPrTitleCheckTest" />
+		</classes>
+
+	</test> <!-- Test -->
+	
+	
+	<test thread-count="5" name=" Dodge test">
+
+		<parameter name="carmodel" value="Dodge" />
+		<classes>
+			<class name="elena.Sprint2DataPrTitleCheckTest" />
+		</classes>
+
+	</test> <!-- Test -->
+	
+	
+	<test thread-count="5" name=" Ford test">
+
+		<parameter name="carmodel" value="Ford" />
+		<classes>
+			<class name="elena.Sprint2DataPrTitleCheckTest" />
+		</classes>
+
+	</test> <!-- Test -->
+
+<test thread-count="5" name=" Lexus test">
+
+		<parameter name="carmodel" value="Lexus" />
+		<classes>
+			<class name="elena.Sprint2DataPrTitleCheckTest" />
+		</classes>
+
+	</test> <!-- Test -->
+
+<test thread-count="5" name=" Chevrolet test">
+
+		<parameter name="carmodel" value="Chevrolet" />
+		<classes>
+			<class name="elena.Sprint2DataPrTitleCheckTest" />
+		</classes>
+
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

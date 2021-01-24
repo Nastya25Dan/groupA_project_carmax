@@ -1,5 +1,7 @@
 package nastya;
 
+
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.Keys;
@@ -50,19 +52,21 @@ public class Sprint2BudgetSearchTest extends TestBase{
 			jsExecutor.executeScript("arguments[0].click();", budgetPage.keepStore);
 		} catch (Exception e) {
 		}
-
-		String title = Driver.getDriver().getTitle().replaceAll(",$", "");
-
+		
+		String suv = Driver.getDriver().getTitle();
+		System.out.println(suv);//Used SUVs $26,483-$35,311 for Sale
+		int title = Integer.parseInt(Driver.getDriver().getTitle().substring(19,25).replaceAll(",", ""));
 		String filterType = budgetPage.filterType.getText();
+		int maxAmount = Integer.parseInt(budgetPage.filterAmount.getText().substring(8));
 
-		String filterAmount = budgetPage.filterAmount.getText().replaceAll(",$", "");
+		System.out.println(title);//35311
+		System.out.println(filterType);//SUVs
+		System.out.println(maxAmount);//35311
 
-		System.out.println(title);
-		System.out.println(filterType);
-		System.out.println(filterAmount);
-
-		//assertTrue(title.contains(filterType));
-		assertTrue(title.contains(filterAmount));
+		assertTrue(suv.contains(filterType));
+		
+		assertEquals(maxAmount,title);
+		
 	}
 
 }

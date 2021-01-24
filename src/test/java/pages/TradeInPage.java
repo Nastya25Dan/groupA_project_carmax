@@ -12,16 +12,16 @@ public class TradeInPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	@FindBy(id = "appraisal-form-year")
+	@FindBy(xpath = "(//input[@class='mdc-text-field__input'])[3]")
 	public WebElement yearBox;
 	
-	@FindBy (id = "appraisal-form-make")
+	@FindBy (xpath = "(//select[@class='mdc-select__native-control'])[2]")
 	public WebElement makeBox;
 	
-	@FindBy (id = "appraisal-form-model")
+	@FindBy (xpath = "(//select[@class='mdc-select__native-control'])[3]")
 	public WebElement modelBox;
 	
-	@FindBy (id = "appraisal-form-mileage")
+	@FindBy (id = "(//input[@class='mdc-text-field__input'])[4]")
 	public WebElement mileageBox;
 	
 	@FindBy (id = "appraisal-form-submit")

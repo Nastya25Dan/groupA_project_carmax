@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nastya.Sprint2ReasearchMore">
+      <class name="nastya.Sprint2TradeInTest">
         <methods>
           <include name="setupMethod"/>
           <include name="teardownMethod"/>
-          <include name="researchMore"/>
           <include name="tearDownReport"/>
           <include name="setUpReport"/>
+          <include name="tradeYourCar" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- nastya.Sprint2ReasearchMore -->
+      </class> <!-- nastya.Sprint2TradeInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

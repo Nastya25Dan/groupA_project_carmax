@@ -10,7 +10,7 @@ import utilities.Driver;
 
 public class BudgetPage{
 	
-    public BudgetPage(){
+    public BudgetPage(){//nastya
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

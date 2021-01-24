@@ -47,9 +47,6 @@ public class CarsChoicesPage {
 	@FindBy (xpath = "//*[@class='mpg']")
 	public WebElement actualMPG;
 	
-//	@FindBy (xpath = "(//*[@class = 'mdc-select__native-control'])[2]")
-//	public WebElement carYearOption;
-	
 	@FindBy (xpath = "//*[@class = 'refinement-pill']")
 	public List<WebElement> commuterTypeSelectOptions;
 	

@@ -21,10 +21,10 @@
    
    <classes>
    
-   	<class name="Elena.Sprint1ByBrandFiltersCheckTest" />
-   	<class name="Elena.Sprint1SuvsFiltersCheckTest" />
-   	<class name="Elena.Sprint2AgeCheckForLoanTest" />
-   	<class name="Elena.Sprint2EcoFriendlyTest" />
+   	<class name="elena.Sprint1ByBrandFiltersCheckTest" />
+   	<class name="elena.Sprint1SuvsFiltersCheckTest" />
+   	<class name="elena.Sprint2AgeCheckForLoanTest" />
+   	<class name="elena.Sprint2EcoFriendlyTest" />
    	
    	 
    </classes>
