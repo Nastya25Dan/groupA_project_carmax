@@ -10,7 +10,7 @@ import utilities.BrowserUtils;
 
 public class Sprint2ReasearchMoreTest extends TestBase {
 
-	@Test
+	@Test (groups = {"smoke"})
 	public void researchMore() {
 
 		BrowserUtils.scroll(0, 2500);

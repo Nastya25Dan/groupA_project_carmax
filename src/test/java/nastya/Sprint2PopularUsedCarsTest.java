@@ -16,7 +16,7 @@ import utilities.Driver;
 
 public class Sprint2PopularUsedCarsTest extends TestBase{
 	
-	@Test
+	@Test (groups = {"smoke"})
 	public void checkAllLinks() {
 		
 		

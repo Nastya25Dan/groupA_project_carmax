@@ -13,64 +13,58 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.util.Strings;
 
+import io.github.bonigarcia.wdm.config.Config;
 import pages.TradeInPage;
 import utilities.BrowserUtils;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 public class Sprint2TradeInTest extends TestBase{
 	
-	@Test (dataProvider = "dataProvider")
-	public void tradeYourCar(String year, String make, String model, String mileage) {
+	@Test 
+	public void tradeYourCar() {
 		
-		Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
-				.withTimeout(10,TimeUnit.SECONDS).pollingEvery(2,TimeUnit.SECONDS)
-				.ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
+		SoftAssert soft = new SoftAssert();
 		TradeInPage tradeIn = new TradeInPage();
-		BrowserUtils.scroll(0, 1500);
-		tradeIn.yearBox.sendKeys(year);
-//		tradeIn.makeBox.click();
-//		tradeIn.makeBox.sendKeys(make);
-		
-	//	Driver.getDriver().navigate().refresh();
+		Driver.getDriver().get(ConfigReader.getProperty("url"));
+		BrowserUtils.waitFor(4);
+		BrowserUtils.scroll(0, 2000);
 		BrowserUtils.waitFor(5);
-		Select s = new Select(tradeIn.makeBox);
 	
-			s.selectByVisibleText(make);
-		
-		
-		/*org.openqa.selenium.support.ui.UnexpectedTagNameException:
-		Element should have been "select" but was "input"*/
-		
-		Select s1 = new Select(tradeIn.modelBox);
-		s1.selectByVisibleText(model);
-
-//		tradeIn.modelBox.click();
-//		tradeIn.modelBox.sendKeys(model);
-		tradeIn.mileageBox.click();
-		tradeIn.mileageBox.sendKeys(mileage);
+		tradeIn.yearBox.sendKeys(ConfigReader.getProperty("appraisel_year"));
+		BrowserUtils.waitForClickablility(tradeIn.makeBox, 2);
+		tradeIn.makeBox.sendKeys(ConfigReader.getProperty("appraisel_make"));
+		BrowserUtils.waitForClickablility(tradeIn.modelBox, 2);
+		tradeIn.modelBox.sendKeys(ConfigReader.getProperty("appraisel_model"));
+		BrowserUtils.waitForClickablility(tradeIn.mileageBox, 2);
+		tradeIn.mileageBox.sendKeys(ConfigReader.getProperty("appraisel_mileage"));
+		BrowserUtils.waitForClickablility(tradeIn.seeYours, 2);
 		tradeIn.seeYours.click();
-		String result = tradeIn.result.getText();
-		System.out.println(result);
+		
+		
+		BrowserUtils.waitFor(3);
+		soft.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_year")));
+		soft.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_make")));
+		soft.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_model")));
+		
+		
 //		assertTrue(result.contains(year));
 //		assertTrue(result.contains(make));
 //		assertTrue(result.contains(model));
 	}
 	
-	@DataProvider 
-	public Object [][] dataProvider(){
-		
-		return new Object[][] {
-		{"2013", "Volkswagen", "Jetta", "190000"},
-		{"2015", "Honda", "Civic", "9000"},
-		{"2009", "Mercedes-Benz", "ML550", "7000"}
-		};
-	}
-	/**
-	 * when entering information manually works, but when enters automatically,
-	 * message popup saying the car is not on the list*/
+//	@DataProvider 
+//	public Object [][] dataProvider(){
+//		
+//		return new Object[][] {
+//		{"2013", "Volkswagen", "Jetta", "10000"},
+//		{"2015", "Honda", "Civic", "9000"},
+//		{"2009", "Mercedes-Benz", "ML550", "7000"}
+//		};
+//	}
 	
 
 }
