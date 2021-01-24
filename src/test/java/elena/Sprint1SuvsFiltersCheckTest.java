@@ -18,10 +18,20 @@ public class Sprint1SuvsFiltersCheckTest extends TestBase{
 	public void suvsFiltersCheck() {
 		LoginPage lp = new LoginPage();
 		lp.shopButton.click();
+		BrowserUtils.waitForPageToLoad(5000);
+		try{BrowserUtils.waitForClickablility(lp.suvsField, 10);
+		jsExecutor.executeScript("arguments[0].click();", lp.suvsField);}
+		catch(Exception e) {}
+		
 		lp.suvsField.click();
-				
+		
 		CarsChoicesPage cc = new CarsChoicesPage();
-				
+		try{BrowserUtils.waitForClickablility(cc.popUpHandle, 10);
+		jsExecutor.executeScript("arguments[0].click();", cc.popUpHandle);}
+		catch(Exception e) {}
+		
+		BrowserUtils.waitForPageToLoad(5000);
+		BrowserUtils.waitForTitleContains("SUVs", 5);
 		int lengthFilters = cc.filters.size();
 		int expectedLengthFilters = 14;
 		assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");

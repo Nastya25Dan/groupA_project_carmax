@@ -20,7 +20,7 @@ public class ConfigReader {
 		prop = new Properties();
 		FileInputStream fi;
 		try {
-			fi = new FileInputStream("config.properties");
+			fi = new FileInputStream("Config.properties");
 			prop.load(fi);
 			fi.close();
 		} catch (IOException e) {

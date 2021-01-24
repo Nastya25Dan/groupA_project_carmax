@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="elena.Sprint2DataPrTitleCheckTest">
+      <class name="elena.Sprint1SuvsFiltersCheckTest">
         <methods>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
+          <include name="suvsFiltersCheck"/>
           <include name="teardownMethod"/>
-          <include name="titleCheck" invocation-numbers="2"/>
           <include name="setUpReport"/>
         </methods>
-      </class> <!-- elena.Sprint2DataPrTitleCheckTest -->
+      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

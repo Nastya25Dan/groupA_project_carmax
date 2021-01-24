@@ -56,7 +56,7 @@ public class Sprint2TypeChechSearchTest extends TestBase{
 		
 
 	String actualType = cc.cartype.getText().toString();
-	System.out.println(actualType);
+//	System.out.println(actualType);
 
 	String expectedType = cartype;
 	
