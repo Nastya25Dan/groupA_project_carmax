@@ -3,15 +3,54 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="furkan.Sprint2ComparedSavedCarTest">
         <methods>
           <include name="setUpReport"/>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
           <include name="compareSavedCars" invocation-numbers="0"/>
+=======
+<<<<<<< HEAD
+      <class name="elena.Sprint1SuvsFiltersCheckTest">
+=======
+<<<<<<< HEAD
+      <class name="furkan.Sprint2TradeInTest">
+        <methods>
+          <include name="setUpReport"/>
+=======
+<<<<<<< HEAD
+      <class name="nastya.Sprint2TradeInTest">
+=======
+      <class name="elena.Sprint2DataPrTitleCheckTest">
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
+        <methods>
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
+          <include name="tearDownReport"/>
+          <include name="setupMethod"/>
+<<<<<<< HEAD
+          <include name="suvsFiltersCheck"/>
+          <include name="teardownMethod"/>
+          <include name="setUpReport"/>
+        </methods>
+      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
+=======
+          <include name="tradeIn"/>
+>>>>>>> 4dcc0d86bce7dcac824c0c0626c0a018adc4cbfb
           <include name="teardownMethod"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- furkan.Sprint2ComparedSavedCarTest -->
+=======
+<<<<<<< HEAD
+      </class> <!-- furkan.Sprint2TradeInTest -->
+=======
+      </class> <!-- elena.Sprint2DataPrTitleCheckTest -->
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
+>>>>>>> 4dcc0d86bce7dcac824c0c0626c0a018adc4cbfb
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

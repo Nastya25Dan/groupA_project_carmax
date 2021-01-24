@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'> Running multiple methods</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 23 23:53:58 EST 2021</td>
+<td>Started on:</td><td>Sun Jan 24 15:50:09 EST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>308 seconds (308075 ms)</td>
+<tr><td>Total time:</td><td>577 seconds (577482 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,184 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='elena.Sprint2ShopByYearTest.shopByYear()'><b>shopByYear</b><br>Test class: elena.Sprint2ShopByYearTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/cars/2019&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THOMAS-PC&apos;, ip: &apos;192.168.200.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a238dc0a27634a27db18bb3d901e1c74
+*** Element info: {Using=xpath, value=//a[@href=&apos;/cars/2019&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at elena.Sprint2ShopByYearTest.shopByYear(Sprint2ShopByYearTest.java:21)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180773372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180773372'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/cars/2019&apos;]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THOMAS-PC&apos;, ip: &apos;192.168.200.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a238dc0a27634a27db18bb3d901e1c74
+*** Element info: {Using=xpath, value=//a[@href=&apos;/cars/2019&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at elena.Sprint2ShopByYearTest.shopByYear(Sprint2ShopByYearTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>elena.Sprint2ShopByYearTest@16267862</td></tr>
+<tr>
+<td title='elena.Sprint1SuvsFiltersCheckTest.suvsFiltersCheck()'><b>suvsFiltersCheck</b><br>Test class: elena.Sprint1SuvsFiltersCheckTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//img[@class=&apos;icon-tile-img loaded tns-complete&apos;])[1]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THOMAS-PC&apos;, ip: &apos;192.168.200.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59f955dceaf35f1d7da669af36c01fac
+*** Element info: {Using=xpath, value=(//img[@class=&apos;icon-tile-img loaded tns-complete&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at elena.Sprint1SuvsFiltersCheckTest.suvsFiltersCheck(Sprint1SuvsFiltersCheckTest.java:21)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8197402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace8197402'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//img[@class=&apos;icon-tile-img loaded tns-complete&apos;])[1]&quot;}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;THOMAS-PC&apos;, ip: &apos;192.168.200.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 59f955dceaf35f1d7da669af36c01fac
+*** Element info: {Using=xpath, value=(//img[@class=&apos;icon-tile-img loaded tns-complete&apos;])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at elena.Sprint1SuvsFiltersCheckTest.suvsFiltersCheck(Sprint1SuvsFiltersCheckTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>elena.Sprint1SuvsFiltersCheckTest@6c3f5566</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,48 +255,68 @@ function toggleAllBoxes() {
 <tr>
 <td title='elena.Sprint2AgeCheckForLoanTest.ageCheckForLoan()'><b>ageCheckForLoan</b><br>Test class: elena.Sprint2AgeCheckForLoanTest</td>
 <td></td>
-<td>43</td>
-<td>elena.Sprint2AgeCheckForLoanTest@3444d69d</td></tr>
+<td>48</td>
+<td>elena.Sprint2AgeCheckForLoanTest@314c508a</td></tr>
 <tr>
 <td title='elena.Sprint1ByBrandCheckTest.byBrandCheck()'><b>byBrandCheck</b><br>Test class: elena.Sprint1ByBrandCheckTest</td>
 <td></td>
-<td>16</td>
-<td>elena.Sprint1ByBrandCheckTest@3ffcd140</td></tr>
+<td>19</td>
+<td>elena.Sprint1ByBrandCheckTest@80ec1f8</td></tr>
 <tr>
 <td title='elena.Sprint1ByBrandFiltersCheckTest.byBrandFiltersCheck()'><b>byBrandFiltersCheck</b><br>Test class: elena.Sprint1ByBrandFiltersCheckTest</td>
 <td></td>
-<td>18</td>
-<td>elena.Sprint1ByBrandFiltersCheckTest@23bb8443</td></tr>
+<td>17</td>
+<td>elena.Sprint1ByBrandFiltersCheckTest@1445d7f</td></tr>
 <tr>
 <td title='elena.Sprint1ByPriceCheckTest.byPriceCheck()'><b>byPriceCheck</b><br>Test class: elena.Sprint1ByPriceCheckTest</td>
 <td></td>
-<td>13</td>
-<td>elena.Sprint1ByPriceCheckTest@1176dcec</td></tr>
+<td>14</td>
+<td>elena.Sprint1ByPriceCheckTest@6a396c1e</td></tr>
 <tr>
 <td title='elena.Sprint2EcoFriendlyTest.ecoFriendly()'><b>ecoFriendly</b><br>Test class: elena.Sprint2EcoFriendlyTest</td>
 <td></td>
-<td>23</td>
-<td>elena.Sprint2EcoFriendlyTest@1372ed45</td></tr>
+<td>26</td>
+<td>elena.Sprint2EcoFriendlyTest@10b48321</td></tr>
 <tr>
 <td title='elena.Sprint2EngineCheckTest.engineCheck()'><b>engineCheck</b><br>Test class: elena.Sprint2EngineCheckTest</td>
 <td></td>
 <td>32</td>
-<td>elena.Sprint2EngineCheckTest@6a79c292</td></tr>
-<tr>
-<td title='elena.Sprint2ShopByYearTest.shopByYear()'><b>shopByYear</b><br>Test class: elena.Sprint2ShopByYearTest</td>
-<td></td>
-<td>26</td>
-<td>elena.Sprint2ShopByYearTest@37574691</td></tr>
-<tr>
-<td title='elena.Sprint1SuvsFiltersCheckTest.suvsFiltersCheck()'><b>suvsFiltersCheck</b><br>Test class: elena.Sprint1SuvsFiltersCheckTest</td>
-<td></td>
-<td>15</td>
-<td>elena.Sprint1SuvsFiltersCheckTest@120d6fe6</td></tr>
+<td>elena.Sprint2EngineCheckTest@6b67034</td></tr>
 <tr>
 <td title='elena.Sprint1SuvsURLCheckTest.suvsURLCheck()'><b>suvsURLCheck</b><br>Test class: elena.Sprint1SuvsURLCheckTest</td>
 <td></td>
-<td>22</td>
-<td>elena.Sprint1SuvsURLCheckTest@4ba2ca36</td></tr>
+<td>17</td>
+<td>elena.Sprint1SuvsURLCheckTest@12405818</td></tr>
+<tr>
+<td title='elena.Sprint2DataPrTitleCheckTest.titleCheck()'><b>titleCheck</b><br>Test class: elena.Sprint2DataPrTitleCheckTest<br>Parameters: GMC</td>
+<td></td>
+<td>38</td>
+<td>elena.Sprint2DataPrTitleCheckTest@453da22c</td></tr>
+<tr>
+<td title='elena.Sprint2DataPrTitleCheckTest.titleCheck()'><b>titleCheck</b><br>Test class: elena.Sprint2DataPrTitleCheckTest<br>Parameters: Toyota</td>
+<td></td>
+<td>37</td>
+<td>elena.Sprint2DataPrTitleCheckTest@453da22c</td></tr>
+<tr>
+<td title='elena.Sprint2DataPrTitleCheckTest.titleCheck()'><b>titleCheck</b><br>Test class: elena.Sprint2DataPrTitleCheckTest<br>Parameters: Dodge</td>
+<td></td>
+<td>39</td>
+<td>elena.Sprint2DataPrTitleCheckTest@453da22c</td></tr>
+<tr>
+<td title='elena.Sprint2DataPrTitleCheckTest.titleCheck()'><b>titleCheck</b><br>Test class: elena.Sprint2DataPrTitleCheckTest<br>Parameters: Ford</td>
+<td></td>
+<td>40</td>
+<td>elena.Sprint2DataPrTitleCheckTest@453da22c</td></tr>
+<tr>
+<td title='elena.Sprint2DataPrTitleCheckTest.titleCheck()'><b>titleCheck</b><br>Test class: elena.Sprint2DataPrTitleCheckTest<br>Parameters: Lexus</td>
+<td></td>
+<td>38</td>
+<td>elena.Sprint2DataPrTitleCheckTest@453da22c</td></tr>
+<tr>
+<td title='elena.Sprint2DataPrTitleCheckTest.titleCheck()'><b>titleCheck</b><br>Test class: elena.Sprint2DataPrTitleCheckTest<br>Parameters: Chevrolet</td>
+<td></td>
+<td>36</td>
+<td>elena.Sprint2DataPrTitleCheckTest@453da22c</td></tr>
 </table><p>
 </body>
 </html>
