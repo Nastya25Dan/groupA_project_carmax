@@ -14,19 +14,6 @@ import utilities.BrowserUtils;
 public class Sprint2DataPrTitleCheckTest extends TestBase{
 	
 	
-	@DataProvider (name="brand", parallel = true)
-	public Object [][] getData(){
-		Object [][] data = new Object[][] {
-			{"GMC"},
-			{"Toyota"},
-			{"Dodge"},
-			{"Ford"},
-			{"Lexus"},
-			{"Chevrolet"}
-		};
-		return data;
-	}
-	    @Parameters ( "carmodel" )
 		@Test (dataProvider = "brand")
 		public void titleCheck(String carmodel) {
 			
@@ -34,18 +21,36 @@ public class Sprint2DataPrTitleCheckTest extends TestBase{
 			CarsChoicesPage cc = new CarsChoicesPage();
 			lp.shopButton.click();
 			
-			lp.commuterType.click();
+			lp.ecoFriendly.click();
+			try{BrowserUtils.waitForClickablility(lp.ecoFriendly, 10);
+			jsExecutor.executeScript("arguments[0].click();", lp.ecoFriendly);}
+			catch(Exception e) {}
 			
-									
-			cc.inputSearch.sendKeys(carmodel + Keys.ENTER);
-
+//			lp.commuterType.click();
+			BrowserUtils.waitForPageToLoad(5000);
 			try{BrowserUtils.waitForClickablility(cc.popUpHandle, 10);
 			jsExecutor.executeScript("arguments[0].click();", cc.popUpHandle);}
 			catch(Exception e) {}
 			
-			BrowserUtils.waitForPageToLoad(5000);
+			cc.inputSearch.sendKeys(carmodel + Keys.ENTER);
+			BrowserUtils.waitForTitleContains(carmodel, 5);
+			
 			BrowserUtils.waitForTitleContains(carmodel, 5);
 			Assert.assertTrue(driver.getTitle().contains(carmodel));
 
 	}
+		
+		
+		@DataProvider (name="brand")
+		public Object [][] getData(){
+			Object [][] data = new Object[][] {
+				{"GMC"},
+				{"Toyota"},
+				{"Dodge"},
+				{"Ford"},
+				{"Lexus"},
+				{"Chevrolet"}
+			};
+			return data;
+		}
 }

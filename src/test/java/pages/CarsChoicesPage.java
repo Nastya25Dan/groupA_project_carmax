@@ -97,6 +97,9 @@ public class CarsChoicesPage {
 			@FindBy (xpath = "(//*[@class='svg-icon-wrapper'])[13]")
 			public WebElement preApprovedButton;
 			
+
+			@FindBy (id="title")
+			public WebElement cartype;	
 			
 	
 }

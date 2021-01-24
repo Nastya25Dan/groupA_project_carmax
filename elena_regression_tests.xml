@@ -5,11 +5,19 @@
   
   <test thread-count="5" name=" Running multiple methods">
     
-   <packages>
+  <classes>
+  <class name="elena.Sprint1ByBrandCheckTest"/>
+  <class name="elena.Sprint1ByBrandFiltersCheckTest"/>
+  <class name="elena.Sprint1ByPriceCheckTest"/>
+  <class name="elena.Sprint1SuvsFiltersCheckTest"/>
+  <class name="elena.Sprint1SuvsURLCheckTest"/>
+  <class name="elena.Sprint2AgeCheckForLoanTest"/>
+  <class name="elena.Sprint2EcoFriendlyTest"/>
+  <class name="elena.Sprint2EngineCheckTest"/>
+  <class name="elena.Sprint2ShopByYearTest"/>
+
   
-  	<package name ="elena"/>
-  
-  </packages>
+  </classes>
     
    
     
