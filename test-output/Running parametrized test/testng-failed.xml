@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Running parametrized test]">
+  <test thread-count="3" name=" Crossover test(failed)">
+    <parameter name="cartype" value="Crossovers"/>
+    <classes>
+      <class name="elena.Sprint2TypeChechSearchTest">
+        <methods>
+          <include name="tearDownReport"/>
+          <include name="setupMethod"/>
+          <include name="teardownMethod"/>
+          <include name="typeCheckSearch" invocation-numbers="0"/>
+          <include name="setUpReport"/>
+        </methods>
+      </class> <!-- elena.Sprint2TypeChechSearchTest -->
+    </classes>
+  </test> <!--  Crossover test(failed) -->
+  <test thread-count="3" name=" Sedan test(failed)">
+    <parameter name="cartype" value="Sedans"/>
+    <classes>
+      <class name="elena.Sprint2TypeChechSearchTest">
+        <methods>
+          <include name="tearDownReport"/>
+          <include name="setupMethod"/>
+          <include name="teardownMethod"/>
+          <include name="typeCheckSearch" invocation-numbers="0"/>
+          <include name="setUpReport"/>
+        </methods>
+      </class> <!-- elena.Sprint2TypeChechSearchTest -->
+    </classes>
+  </test> <!--  Sedan test(failed) -->
+  <test thread-count="3" name=" Coupe test(failed)">
+    <parameter name="cartype" value="Coupes"/>
+    <classes>
+      <class name="elena.Sprint2TypeChechSearchTest">
+        <methods>
+          <include name="tearDownReport"/>
+          <include name="setupMethod"/>
+          <include name="teardownMethod"/>
+          <include name="typeCheckSearch" invocation-numbers="0"/>
+          <include name="setUpReport"/>
+        </methods>
+      </class> <!-- elena.Sprint2TypeChechSearchTest -->
+    </classes>
+  </test> <!--  Coupe test(failed) -->
+</suite> <!-- Failed suite [Running parametrized test] -->

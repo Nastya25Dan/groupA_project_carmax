@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Running parametrized test" thread-count="3">
+
+
+	<test thread-count="5" name=" Crossover test">
+
+		<parameter name="cartype" value="Crossovers" />
+		<classes>
+			<class name="elena.Sprint2TypeChechSearchTest" />
+		</classes>
+
+	</test> <!-- Test -->
+	
+	
+	<test thread-count="5" name=" Sedan test">
+
+		<parameter name="cartype" value="Sedans" />
+		<classes>
+			<class name="elena.Sprint2TypeChechSearchTest" />
+		</classes>
+
+	</test> <!-- Test -->
+	
+	
+	<test thread-count="5" name=" Coupe test">
+
+		<parameter name="cartype" value="Coupes" />
+		<classes>
+			<class name="elena.Sprint2TypeChechSearchTest" />
+		</classes>
+
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
