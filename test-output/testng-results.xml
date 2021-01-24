@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+<<<<<<< HEAD
+  <suite started-at="2021-01-24T14:40:14 CST" name="Default suite" finished-at="2021-01-24T14:40:38 CST" duration-ms="24703">
+    <groups>
+    </groups>
+    <test started-at="2021-01-24T14:40:14 CST" name="Default test" finished-at="2021-01-24T14:40:38 CST" duration-ms="24703">
+      <class name="furkan.Sprint2TradeInTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T14:40:13 CST" name="setUpReport" finished-at="2021-01-24T14:40:14 CST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T14:40:14 CST" name="setupMethod" finished-at="2021-01-24T14:40:17 CST" duration-ms="3657" status="PASS">
+=======
+  <suite name="Default suite" duration-ms="56956" started-at="2021-01-24T11:49:20 EST" finished-at="2021-01-24T11:50:17 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56956" started-at="2021-01-24T11:49:20 EST" finished-at="2021-01-24T11:50:17 EST">
+      <class name="nastya.Sprint2TradeInTest">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="setUpReport" is-config="true" duration-ms="286" started-at="2021-01-24T11:49:19 EST" finished-at="2021-01-24T11:49:20 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method status="PASS" signature="setupMethod(org.testng.ITestContext)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="setupMethod" is-config="true" duration-ms="5379" started-at="2021-01-24T11:49:20 EST" finished-at="2021-01-24T11:49:25 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5bfc257]]>
+=======
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="37993" started-at="2021-01-24T16:13:29 EST" finished-at="2021-01-24T16:14:07 EST">
@@ -11,7 +46,12 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2ShopByYearTest@4df828d7]" name="setupMethod" is-config="true" duration-ms="11664" started-at="2021-01-24T16:13:29 EST" finished-at="2021-01-24T16:13:41 EST">
+=======
+        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="setupMethod" is-config="true" duration-ms="8636" started-at="2021-01-24T00:46:30 EST" finished-at="2021-01-24T00:46:38 EST">
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -20,7 +60,545 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="shopByYear()[pri:0, instance:elena.Sprint2ShopByYearTest@4df828d7]" name="shopByYear" duration-ms="25481" started-at="2021-01-24T16:13:41 EST" finished-at="2021-01-24T16:14:06 EST">
+=======
+<<<<<<< HEAD
+        <test-method signature="tradeIn()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T14:40:17 CST" name="tradeIn" finished-at="2021-01-24T14:40:38 CST" duration-ms="20888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tradeIn -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T14:40:38 CST" name="teardownMethod" finished-at="2021-01-24T14:40:38 CST" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tradeIn status=SUCCESS method=Sprint2TradeInTest.tradeIn()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e] output={null}]]]>
+=======
+        <test-method status="PASS" signature="titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="titleCheck" duration-ms="42416" started-at="2021-01-24T00:46:38 EST" data-provider="brand" finished-at="2021-01-24T00:47:21 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GMC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleCheck -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="teardownMethod" is-config="true" duration-ms="856" started-at="2021-01-24T00:47:21 EST" finished-at="2021-01-24T00:47:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleCheck status=SUCCESS method=Sprint2DataPrTitleCheckTest.titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6] output={null}]]]>
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- setupMethod -->
+        <test-method status="FAIL" signature="tradeYourCar(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="tradeYourCar" duration-ms="16118" started-at="2021-01-24T11:49:25 EST" data-provider="dataProvider" finished-at="2021-01-24T11:49:41 EST">
+=======
+        </test-method> <!-- teardownMethod -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T14:40:38 CST" name="tearDownReport" finished-at="2021-01-24T14:40:39 CST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- furkan.Sprint2TradeInTest -->
+=======
+        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="setupMethod" is-config="true" duration-ms="10340" started-at="2021-01-24T00:47:22 EST" finished-at="2021-01-24T00:47:32 EST">
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2013]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Volkswagen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jetta]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[190000]]>
+              </value>
+            </param>
+          </params>
+<<<<<<< HEAD
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//select[@class='mdc-select__native-control'])[2]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AGAQ1MP', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\tasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 283938adfe70133fc5924d59484a5d68
+*** Element info: {Using=xpath, value=(//select[@class='mdc-select__native-control'])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//select[@class='mdc-select__native-control'])[2]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AGAQ1MP', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\tasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 283938adfe70133fc5924d59484a5d68
+*** Element info: {Using=xpath, value=(//select[@class='mdc-select__native-control'])[2]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getTagName(Unknown Source)
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
+at nastya.Sprint2TradeInTest.tradeYourCar(Sprint2TradeInTest.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tradeYourCar -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="teardownMethod" is-config="true" duration-ms="572" started-at="2021-01-24T11:49:41 EST" finished-at="2021-01-24T11:49:42 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tradeYourCar status=FAILURE method=Sprint2TradeInTest.tradeYourCar(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36] output={null}]]]>
+=======
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="titleCheck" duration-ms="41082" started-at="2021-01-24T00:47:32 EST" data-provider="brand" finished-at="2021-01-24T00:48:13 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Toyota]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleCheck -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="teardownMethod" is-config="true" duration-ms="888" started-at="2021-01-24T00:48:13 EST" finished-at="2021-01-24T00:48:14 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleCheck status=SUCCESS method=Sprint2DataPrTitleCheckTest.titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6] output={null}]]]>
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="setupMethod(org.testng.ITestContext)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="setupMethod" is-config="true" duration-ms="3745" started-at="2021-01-24T11:49:42 EST" finished-at="2021-01-24T11:49:45 EST">
+=======
+        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="setupMethod" is-config="true" duration-ms="7383" started-at="2021-01-24T00:48:14 EST" finished-at="2021-01-24T00:48:21 EST">
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5bfc257]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="tradeYourCar(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="tradeYourCar" duration-ms="11089" started-at="2021-01-24T11:49:45 EST" data-provider="dataProvider" finished-at="2021-01-24T11:49:57 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Honda]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Civic]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9000]]>
+=======
+        <test-method status="FAIL" signature="titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="titleCheck" duration-ms="10156" started-at="2021-01-24T00:48:21 EST" data-provider="brand" finished-at="2021-01-24T00:48:31 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dodge]]>
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+<<<<<<< HEAD
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='mdc-text-field__input'])[3]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AGAQ1MP', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\tasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 283938adfe70133fc5924d59484a5d68
+*** Element info: {Using=xpath, value=(//input[@class='mdc-text-field__input'])[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='mdc-text-field__input'])[3]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AGAQ1MP', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\tasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 283938adfe70133fc5924d59484a5d68
+*** Element info: {Using=xpath, value=(//input[@class='mdc-text-field__input'])[3]}
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='shop-by-lifestyle-img'])[2]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'THOMAS-PC', ip: '192.168.200.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 49193986acb24506cb58e30dd0b56fa8
+*** Element info: {Using=xpath, value=(//*[@class='shop-by-lifestyle-img'])[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='shop-by-lifestyle-img'])[2]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'THOMAS-PC', ip: '192.168.200.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ELENAP~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63871}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 49193986acb24506cb58e30dd0b56fa8
+*** Element info: {Using=xpath, value=(//*[@class='shop-by-lifestyle-img'])[2]}
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<<<<<<< HEAD
+at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+at nastya.Sprint2TradeInTest.tradeYourCar(Sprint2TradeInTest.java:33)
+=======
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at elena.Sprint2DataPrTitleCheckTest.titleCheck(Sprint2DataPrTitleCheckTest.java:24)
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- tradeYourCar -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="teardownMethod" is-config="true" duration-ms="692" started-at="2021-01-24T11:49:57 EST" finished-at="2021-01-24T11:49:57 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tradeYourCar status=FAILURE method=Sprint2TradeInTest.tradeYourCar(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36] output={null}]]]>
+=======
+        </test-method> <!-- titleCheck -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="teardownMethod" is-config="true" duration-ms="1515" started-at="2021-01-24T00:48:31 EST" finished-at="2021-01-24T00:48:33 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleCheck status=FAILURE method=Sprint2DataPrTitleCheckTest.titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6] output={null}]]]>
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="setupMethod(org.testng.ITestContext)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="setupMethod" is-config="true" duration-ms="7575" started-at="2021-01-24T11:49:57 EST" finished-at="2021-01-24T11:50:05 EST">
+=======
+        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="setupMethod" is-config="true" duration-ms="7477" started-at="2021-01-24T00:48:33 EST" finished-at="2021-01-24T00:48:40 EST">
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5bfc257]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+<<<<<<< HEAD
+        <test-method status="FAIL" signature="tradeYourCar(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="tradeYourCar" duration-ms="11070" started-at="2021-01-24T11:50:05 EST" data-provider="dataProvider" finished-at="2021-01-24T11:50:16 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2009]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mercedes-Benz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ML550]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='mdc-text-field__input'])[3]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AGAQ1MP', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\tasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 283938adfe70133fc5924d59484a5d68
+*** Element info: {Using=xpath, value=(//input[@class='mdc-text-field__input'])[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@class='mdc-text-field__input'])[3]"}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AGAQ1MP', ip: '192.168.1.249', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\tasia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 283938adfe70133fc5924d59484a5d68
+*** Element info: {Using=xpath, value=(//input[@class='mdc-text-field__input'])[3]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+at nastya.Sprint2TradeInTest.tradeYourCar(Sprint2TradeInTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tradeYourCar -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="teardownMethod" is-config="true" duration-ms="667" started-at="2021-01-24T11:50:16 EST" finished-at="2021-01-24T11:50:17 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tradeYourCar status=FAILURE method=Sprint2TradeInTest.tradeYourCar(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36] output={null}]]]>
+=======
+        <test-method status="PASS" signature="titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="titleCheck" duration-ms="40259" started-at="2021-01-24T00:48:40 EST" data-provider="brand" finished-at="2021-01-24T00:49:21 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ford]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleCheck -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="teardownMethod" is-config="true" duration-ms="805" started-at="2021-01-24T00:49:21 EST" finished-at="2021-01-24T00:49:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleCheck status=SUCCESS method=Sprint2DataPrTitleCheckTest.titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="setupMethod" is-config="true" duration-ms="7346" started-at="2021-01-24T00:49:22 EST" finished-at="2021-01-24T00:49:29 EST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="titleCheck" duration-ms="36432" started-at="2021-01-24T00:49:29 EST" data-provider="brand" finished-at="2021-01-24T00:50:05 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lexus]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleCheck -->
+        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="teardownMethod" is-config="true" duration-ms="825" started-at="2021-01-24T00:50:05 EST" finished-at="2021-01-24T00:50:06 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleCheck status=SUCCESS method=Sprint2DataPrTitleCheckTest.titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="setupMethod" is-config="true" duration-ms="10194" started-at="2021-01-24T00:50:06 EST" finished-at="2021-01-24T00:50:16 EST">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="titleCheck" duration-ms="38614" started-at="2021-01-24T00:50:16 EST" data-provider="brand" finished-at="2021-01-24T00:50:55 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chevrolet]]>
+              </value>
+            </param>
+          </params>
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shopByYear -->
@@ -28,18 +606,40 @@
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[[TestResult name=shopByYear status=SUCCESS method=Sprint2ShopByYearTest.shopByYear()[pri:0, instance:elena.Sprint2ShopByYearTest@4df828d7] output={null}]]]>
+=======
+                <![CDATA[[TestResult name=titleCheck status=SUCCESS method=Sprint2DataPrTitleCheckTest.titleCheck(java.lang.String)[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6] output={null}]]]>
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDownReport()[pri:0, instance:elena.Sprint2ShopByYearTest@4df828d7]" name="tearDownReport" is-config="true" duration-ms="327" started-at="2021-01-24T16:14:07 EST" finished-at="2021-01-24T16:14:07 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- elena.Sprint2ShopByYearTest -->
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="tearDownReport" is-config="true" duration-ms="575" started-at="2021-01-24T11:50:17 EST" finished-at="2021-01-24T11:50:17 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- nastya.Sprint2TradeInTest -->
+=======
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="tearDownReport" is-config="true" duration-ms="357" started-at="2021-01-24T00:50:56 EST" finished-at="2021-01-24T00:50:56 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- elena.Sprint2DataPrTitleCheckTest -->
+>>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
+>>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
+>>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
