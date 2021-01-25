@@ -1,70 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25256" started-at="2021-01-24T18:50:51 EST" finished-at="2021-01-24T18:51:16 EST">
+  <suite started-at="2021-01-24T21:34:36 CST" name="Default suite" finished-at="2021-01-24T21:34:55 CST" duration-ms="18908">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25256" started-at="2021-01-24T18:50:51 EST" finished-at="2021-01-24T18:51:16 EST">
-      <class name="nastya.Sprint2TradeInTest">
-        <test-method status="PASS" signature="setUpReport()[pri:0, instance:nastya.Sprint2TradeInTest@11e21d0e]" name="setUpReport" is-config="true" duration-ms="296" started-at="2021-01-24T18:50:50 EST" finished-at="2021-01-24T18:50:51 EST">
+    <test started-at="2021-01-24T21:34:36 CST" name="Default test" finished-at="2021-01-24T21:34:55 CST" duration-ms="18908">
+      <class name="burcu.Sprint2TitleTestForMake">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:burcu.Sprint2TitleTestForMake@506ae4d4]" started-at="2021-01-24T21:34:36 CST" name="setUpReport" finished-at="2021-01-24T21:34:36 CST" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method status="PASS" signature="setupMethod(org.testng.ITestContext)[pri:0, instance:nastya.Sprint2TradeInTest@11e21d0e]" name="setupMethod" is-config="true" duration-ms="5539" started-at="2021-01-24T18:50:51 EST" finished-at="2021-01-24T18:50:56 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@3be4f71]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="tradeYourCar()[pri:0, instance:nastya.Sprint2TradeInTest@11e21d0e]" name="tradeYourCar" duration-ms="18876" started-at="2021-01-24T18:50:56 EST" finished-at="2021-01-24T18:51:15 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tradeYourCar -->
-        <test-method status="PASS" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:nastya.Sprint2TradeInTest@11e21d0e]" name="teardownMethod" is-config="true" duration-ms="795" started-at="2021-01-24T18:51:15 EST" finished-at="2021-01-24T18:51:16 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tradeYourCar status=SUCCESS method=Sprint2TradeInTest.tradeYourCar()[pri:0, instance:nastya.Sprint2TradeInTest@11e21d0e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownMethod -->
-        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:nastya.Sprint2TradeInTest@11e21d0e]" name="tearDownReport" is-config="true" duration-ms="370" started-at="2021-01-24T18:51:16 EST" finished-at="2021-01-24T18:51:16 EST">
-=======
-<<<<<<< HEAD
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
-=======
-<<<<<<< HEAD
-<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
->>>>>>> 4dcc0d86bce7dcac824c0c0626c0a018adc4cbfb
->>>>>>> 910f9a792ca24551f6fd3d0d1d4c02cabc86afa6
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2021-01-24T20:01:04 CST" name="Default suite" finished-at="2021-01-24T20:01:29 CST" duration-ms="24749">
-    <groups>
-    </groups>
-    <test started-at="2021-01-24T20:01:04 CST" name="Default test" finished-at="2021-01-24T20:01:29 CST" duration-ms="24749">
-      <class name="furkan.Sprint2TradeInTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T20:01:04 CST" name="setUpReport" finished-at="2021-01-24T20:01:04 CST" duration-ms="211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T20:01:04 CST" name="setupMethod" finished-at="2021-01-24T20:01:08 CST" duration-ms="3823" status="PASS">
+        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:burcu.Sprint2TitleTestForMake@506ae4d4]" started-at="2021-01-24T21:34:36 CST" name="setupMethod" finished-at="2021-01-24T21:34:39 CST" duration-ms="3053" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -73,63 +20,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="tradeIn()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T20:01:08 CST" name="tradeIn" finished-at="2021-01-24T20:01:29 CST" duration-ms="20770" status="PASS">
+        <test-method signature="makeLink2()[pri:0, instance:burcu.Sprint2TitleTestForMake@506ae4d4]" started-at="2021-01-24T21:34:39 CST" name="makeLink2" finished-at="2021-01-24T21:34:55 CST" duration-ms="15611" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tradeIn -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T20:01:29 CST" name="teardownMethod" finished-at="2021-01-24T20:01:29 CST" duration-ms="136" status="PASS">
+        </test-method> <!-- makeLink2 -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:burcu.Sprint2TitleTestForMake@506ae4d4]" started-at="2021-01-24T21:34:55 CST" name="teardownMethod" finished-at="2021-01-24T21:34:55 CST" duration-ms="225" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=tradeIn status=SUCCESS method=Sprint2TradeInTest.tradeIn()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e] output={null}]]]>
+                <![CDATA[[TestResult name=makeLink2 status=SUCCESS method=Sprint2TitleTestForMake.makeLink2()[pri:0, instance:burcu.Sprint2TitleTestForMake@506ae4d4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:furkan.Sprint2TradeInTest@3e58a80e]" started-at="2021-01-24T20:01:29 CST" name="tearDownReport" finished-at="2021-01-24T20:01:29 CST" duration-ms="327" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:burcu.Sprint2TitleTestForMake@506ae4d4]" started-at="2021-01-24T21:34:55 CST" name="tearDownReport" finished-at="2021-01-24T21:34:55 CST" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- furkan.Sprint2TradeInTest -->
-=======
-<<<<<<< HEAD
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:furkan.Sprint2ComparedSavedCarTest@5876a9af]" started-at="2021-01-24T17:40:54 CST" name="tearDownReport" finished-at="2021-01-24T17:40:54 CST" duration-ms="339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- furkan.Sprint2ComparedSavedCarTest -->
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:elena.Sprint2ShopByYearTest@4df828d7]" name="tearDownReport" is-config="true" duration-ms="327" started-at="2021-01-24T16:14:07 EST" finished-at="2021-01-24T16:14:07 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- elena.Sprint2ShopByYearTest -->
-=======
-<<<<<<< HEAD
-        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:nastya.Sprint2TradeInTest@4ba2ca36]" name="tearDownReport" is-config="true" duration-ms="575" started-at="2021-01-24T11:50:17 EST" finished-at="2021-01-24T11:50:17 EST">
->>>>>>> eda32fdd5146a489a02a99eadb15e0393d744807
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- nastya.Sprint2TradeInTest -->
-<<<<<<< HEAD
-=======
-=======
-        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:elena.Sprint2DataPrTitleCheckTest@120d6fe6]" name="tearDownReport" is-config="true" duration-ms="357" started-at="2021-01-24T00:50:56 EST" finished-at="2021-01-24T00:50:56 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- elena.Sprint2DataPrTitleCheckTest -->
->>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
->>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
->>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
->>>>>>> 4dcc0d86bce7dcac824c0c0626c0a018adc4cbfb
->>>>>>> eda32fdd5146a489a02a99eadb15e0393d744807
->>>>>>> 910f9a792ca24551f6fd3d0d1d4c02cabc86afa6
+      </class> <!-- burcu.Sprint2TitleTestForMake -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
