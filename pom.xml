@@ -85,6 +85,7 @@
 					<suiteXmlFile>${runner2}</suiteXmlFile>
 					<suiteXmlFile>${runner3}</suiteXmlFile>
 					<suiteXmlFile>${runner4}</suiteXmlFile>
+					<suiteXmlFile>${runner5}</suiteXmlFile>
 					
 					
 					

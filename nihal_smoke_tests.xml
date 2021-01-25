@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Smoke Tests Suite">
+<suite name="Nihal Smoke Tests Suite">
     <test thread-count="5" name="nihal smoke Test">
 
         <groups>
@@ -10,9 +10,7 @@
         </groups>
 
         <classes>
-            <class name="nihal.Sprint1FooterTest"></class>
-            <class name="nihal.Sprint1PolicyTest"></class>
-            <class name="nihal.Sprint2CheckLinkTest"></class>
+            
             <class name="nihal.Sprint2ServiceLinkTest"></class>
 
         </classes>
