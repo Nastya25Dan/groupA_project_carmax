@@ -10,8 +10,8 @@ import utilities.CSVReader;
 import static org.testng.Assert.assertTrue;
 
 public class Sprint2ServiceLinkTest extends TestBase {
-    @Parameters("browser")
-    @Test
+
+    @Test(groups = {"smoke"})
     public void serviceRepair(){
         Nihal2Page n=new Nihal2Page();
         n.serviceRepair.click();
@@ -19,6 +19,7 @@ public class Sprint2ServiceLinkTest extends TestBase {
         n.findShop.click();
         assertTrue(driver.getTitle().contains("RepairPal"));
     }
+
 
     }
 

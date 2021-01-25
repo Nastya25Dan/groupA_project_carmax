@@ -1,7 +1,5 @@
 package nihal;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -25,9 +23,9 @@ public class Sprint2ModelTest extends TestBase {
         actions.moveToElement(n.keepinStore).click().build().perform();
         BrowserUtils.scroll(0, 100);
         SoftAssert softAssert = new SoftAssert();
-        AssertJUnit.assertTrue(driver.getPageSource().contains("See all reviews"));
+        softAssert.assertTrue(driver.getPageSource().contains("See all reviews"));
         n.reviewButton.click();
-        AssertJUnit.assertTrue(driver.getCurrentUrl().contains("reviews"));
+        softAssert.assertTrue(driver.getCurrentUrl().contains("reviews"));
         softAssert.assertAll();
     }
 //

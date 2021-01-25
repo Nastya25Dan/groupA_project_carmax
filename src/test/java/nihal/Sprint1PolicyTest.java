@@ -11,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 
 public class Sprint1PolicyTest extends TestBase {
 
-    @Test(priority = 2,groups = "A")
+    @Test(groups = {"smoke"})
     public void checkPrivacyPolicy(){
         NihalPage m=new NihalPage();
         BrowserUtils.scroll(0,100);

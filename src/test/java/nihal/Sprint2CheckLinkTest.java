@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 
 public class Sprint2CheckLinkTest extends TestBase{
 
-    @Test
+    @Test(groups = {"smoke"})
     public void clickLink(){
         Nihal2Page n = new Nihal2Page();
         BrowserUtils.scroll(0,100);
@@ -19,7 +19,7 @@ public class Sprint2CheckLinkTest extends TestBase{
         AssertJUnit.assertTrue(driver.getCurrentUrl().contains("cars/all"));
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void clickLink1(){
         Nihal2Page n = new Nihal2Page();
         BrowserUtils.scroll(0,100);

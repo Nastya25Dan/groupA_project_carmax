@@ -15,7 +15,7 @@ import static org.testng.Assert.assertEquals;
 
 public class Sprint1FooterTest extends TestBase {
 
-    @Test(priority = 1,groups = "A")
+    @Test(groups = {"smoke"})
 
     public void footerTest(){
         NihalPage  m=new NihalPage();
