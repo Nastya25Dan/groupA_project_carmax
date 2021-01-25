@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Sprint2 Test">
+    <classes>
+      
+      <class name="elena.Sprint2DataPrTitleCheckTest"/>
+      <class name="nastya.Sprint2PopularUsedCarsTest"/>
+      <class name="elena.Sprint2EcoFriendlyTest"/>
+      <class name="furkan.Sprint2ComparedSavedCarTest"/>
+      <class name="furkan.Sprint2TradeInTest"/>
+      <class name="furkan.Sprint2SetStoreTest"/>
+      <class name="nastya.Sprint2TradeInTest"/>
+      <class name="nihal.Sprint2ModelTest"/>
+      <class name="nihal.Sprint2CheckLink"/>
+      <class name="elena.Sprint2EngineCheckTest"/>
+      <class name="nihal.Sprint2ScheduleTest"/>
+      <class name="burcu.Sprint2CheckFiltersTest2"/>
+      <class name="burcu.Sprint2CheckFiltersTest1"/>
+      <class name="burcu.Sprint2TitleTestForMake"/>
+      <class name="nastya.Sprint2ChangeLocationTest"/>
+      <class name="burcu.Sprint2MakeLinkTest"/>
+      <class name="elena.Sprint2AgeCheckForLoanTest"/>
+      <class name="nastya.Sprint2ReasearchMoreTest"/>
+      <class name="elena.Sprint2ShopByYearTest"/>
+      <class name="nihal.Sprint2FindStoreTest"/>
+      <class name="nastya.Sprint2BudgetSearchTest"/>
+      <class name="nihal.Sprint2MediaTest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
