@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -36,7 +38,7 @@ public class Sprint2DataPrTitleCheckTest extends TestBase{
 			BrowserUtils.waitForTitleContains(carmodel, 5);
 			
 			BrowserUtils.waitForTitleContains(carmodel, 5);
-			Assert.assertTrue(driver.getTitle().contains(carmodel));
+			AssertJUnit.assertTrue(driver.getTitle().contains(carmodel));
 
 	}
 		

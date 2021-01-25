@@ -1,5 +1,7 @@
 package nastya;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -39,8 +41,8 @@ public class Sprint1Tests extends TestBase{
 
 		System.out.println(select.getFirstSelectedOption().getText());
 		List<WebElement> options = select.getOptions();
-		List<String> expectedlist = Arrays.asList("Excellent (800+ FICO® Score)" + "Very Good (740-799 FICO® Score)"
-				+ "Good (670-739 FICO® Score)" + "Fair (580-669 FICO® Score)" + "Challenged (< 580 FICO® Score)");
+		List<String> expectedlist = Arrays.asList("Excellent (800+ FICOï¿½ Score)" + "Very Good (740-799 FICOï¿½ Score)"
+				+ "Good (670-739 FICOï¿½ Score)" + "Fair (580-669 FICOï¿½ Score)" + "Challenged (< 580 FICOï¿½ Score)");
 
 		List<String> actualList = new ArrayList<>();
 
@@ -50,8 +52,8 @@ public class Sprint1Tests extends TestBase{
 
 		System.out.println(actualList);
 
-		Assert.assertTrue(actualList.contains("Good (670-739 FICO® Score)"));
-		Assert.assertTrue(actualList.contains("Excellent (800+ FICO® Score)"));
+		AssertJUnit.assertTrue(actualList.contains("Good (670-739 FICOï¿½ Score)"));
+		AssertJUnit.assertTrue(actualList.contains("Excellent (800+ FICOï¿½ Score)"));
 
 	}
 	
@@ -79,7 +81,7 @@ public class Sprint1Tests extends TestBase{
 		
 		BrowserUtils.scroll(0, 2300);
 		BrowserUtils.waitForPageToLoad(2000);
-		Assert.assertTrue(driver.getPageSource().contains("Research Best-Selling Cars"));
+		AssertJUnit.assertTrue(driver.getPageSource().contains("Research Best-Selling Cars"));
 	}
 
 	@Test
@@ -89,7 +91,7 @@ public class Sprint1Tests extends TestBase{
 		
 		n.researchMore.click();
 		String actual = driver.getCurrentUrl();
-		Assert.assertTrue(actual.contains("/articles"));
+		AssertJUnit.assertTrue(actual.contains("/articles"));
 		
 	}
 	
@@ -99,7 +101,7 @@ public class Sprint1Tests extends TestBase{
 		BudgetPage n = new BudgetPage();
 
 		n.infoButton.click();
-		Assert.assertTrue(n.infoMessage.isEnabled());
+		AssertJUnit.assertTrue(n.infoMessage.isEnabled());
 	}
 
 

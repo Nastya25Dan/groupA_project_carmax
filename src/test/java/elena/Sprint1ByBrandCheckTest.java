@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
@@ -18,7 +20,7 @@ public class Sprint1ByBrandCheckTest extends TestBase{
 	String expectedURL = "https://www.carmax.com/cars/honda";
 	String actualURL = driver.getCurrentUrl();
 	
-	assertEquals(actualURL, expectedURL, "Urls didn't match");
+	AssertJUnit.assertEquals(actualURL, expectedURL, "Urls didn't match");
 	
     
 	

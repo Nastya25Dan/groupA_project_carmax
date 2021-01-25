@@ -1,6 +1,8 @@
 package nihal;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import pages.NihalPage;
 import tests.TestBase;
 import utilities.BrowserUtils;
@@ -20,7 +22,7 @@ public class Sprint1HowItWorksTest extends TestBase {
         m.howItWorks.click();
         String actualurl=driver.getCurrentUrl();
         String expectedurl="https://www.carmax.com/car-financing";
-        assertEquals(actualurl,expectedurl);
+        AssertJUnit.assertEquals(actualurl,expectedurl);
 
     }
     @Test(priority  =5,groups = "A")
@@ -29,7 +31,7 @@ public class Sprint1HowItWorksTest extends TestBase {
         BrowserUtils.scroll(0,100);
         m.howItWorks.click();
         m.approveButton.click();
-        assertTrue(driver.getPageSource().contains("Let's calculate a budget that works for you.*"));
+        AssertJUnit.assertTrue(driver.getPageSource().contains("Let's calculate a budget that works for you.*"));
 
     }
 

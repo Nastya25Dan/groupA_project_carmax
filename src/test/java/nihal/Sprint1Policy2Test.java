@@ -1,6 +1,8 @@
 package nihal;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import pages.NihalPage;
 import tests.TestBase;
 import utilities.BrowserUtils;
@@ -19,7 +21,7 @@ public class Sprint1Policy2Test extends TestBase {
         m.contactUs.click();
         String name="zhot";
         BrowserUtils.takeScreenshot(name);
-        assertTrue(driver.getPageSource().contains("take control of your data"));
+        AssertJUnit.assertTrue(driver.getPageSource().contains("take control of your data"));
 
     }
 }

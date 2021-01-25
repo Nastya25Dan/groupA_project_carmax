@@ -1,5 +1,7 @@
 package furkan;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
@@ -31,9 +33,9 @@ public class Sprint2TradeInTest extends TestBase{
 		BrowserUtils.waitForClickablility(mp.tradeInSubmitButton, 3);
 		mp.tradeInSubmitButton.click();
 		BrowserUtils.waitFor(3);
-		soft.assertTrue(mp.tradeInResult.getText().contains(ConfigReader.getProperty("trade_in_make")));
-		soft.assertTrue(mp.tradeInResult.getText().contains(ConfigReader.getProperty("trade_in_year")));
-		soft.assertTrue(mp.tradeInResult.getText().contains(ConfigReader.getProperty("trade_in_model")));
+		AssertJUnit.assertTrue(mp.tradeInResult.getText().contains(ConfigReader.getProperty("trade_in_make")));
+		AssertJUnit.assertTrue(mp.tradeInResult.getText().contains(ConfigReader.getProperty("trade_in_year")));
+		AssertJUnit.assertTrue(mp.tradeInResult.getText().contains(ConfigReader.getProperty("trade_in_model")));
 		
 	}
 

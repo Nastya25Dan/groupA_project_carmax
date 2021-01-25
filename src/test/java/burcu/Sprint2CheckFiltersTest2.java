@@ -1,5 +1,7 @@
 package burcu;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import static org.testng.Assert.assertTrue;
@@ -35,7 +37,7 @@ public class Sprint2CheckFiltersTest2 extends TestBase {
 	    
 	    List<String> filterList = BrowserUtils.getElementsText(b.filtersList);
 	    
-	    assertEquals(filterList.size(), 16);
+	    AssertJUnit.assertEquals(filterList.size(), 16);
 	
 	
 
@@ -61,7 +63,7 @@ public class Sprint2CheckFiltersTest2 extends TestBase {
 
 	    System.out.println(expectedElements);
 	    
-	    assertTrue(filterList.containsAll(expectedElements));
+	    AssertJUnit.assertTrue(filterList.containsAll(expectedElements));
 		
 }
 }

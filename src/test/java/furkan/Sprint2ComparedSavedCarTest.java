@@ -1,5 +1,7 @@
 package furkan;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.*;
 
 import java.util.*;
@@ -57,7 +59,7 @@ import utilities.Driver;
 			scp.compareButton.click();
 			BrowserUtils.waitFor(4);
 			String expectedMessage="Compare 2 Vehicles";
-			soft.assertTrue(expectedMessage.contains(scp.compareTitle.getText()));
+			AssertJUnit.assertTrue(expectedMessage.contains(scp.compareTitle.getText()));
 			
 			List<String>presentCarList=new ArrayList<>();
 			
@@ -71,7 +73,7 @@ import utilities.Driver;
 			expectedCarList.add(car1);
 			expectedCarList.add(car2);
 			
-			soft.assertTrue(expectedCarList.containsAll(presentCarList));
+			AssertJUnit.assertTrue(expectedCarList.containsAll(presentCarList));
 		}
 		
 @DataProvider

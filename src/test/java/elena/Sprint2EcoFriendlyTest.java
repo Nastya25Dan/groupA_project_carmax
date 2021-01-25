@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -44,7 +46,7 @@ public class Sprint2EcoFriendlyTest extends TestBase{
 
 	int expectedMPG = 35;
 	
-	assertTrue(actualMPG>=expectedMPG, "This is NOT eco car");
+	AssertJUnit.assertTrue(actualMPG>=expectedMPG, "This is NOT eco car");
 	
 	
 	}

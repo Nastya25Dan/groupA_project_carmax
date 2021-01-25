@@ -1,6 +1,8 @@
 package nihal;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import pages.NihalPage;
 import tests.TestBase;
 import utilities.BrowserUtils;
@@ -16,7 +18,7 @@ public class Sprint1PolicyTest extends TestBase {
         m.privacyPolicy.click();
         String actualResult=driver.getTitle();
         String expectedResult="Privacy Policy | CarMax";
-        assertEquals(actualResult,expectedResult);
+        AssertJUnit.assertEquals(actualResult,expectedResult);
 
 
     }

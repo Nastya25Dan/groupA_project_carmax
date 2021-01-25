@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
@@ -37,7 +39,7 @@ public class Sprint2EngineCheckTest extends TestBase{
 
 		
 		String expectedEngine = "Turbo Diesel Engine";
-		assertEquals(d, expectedEngine, "Engine didn't match");
+		AssertJUnit.assertEquals(d, expectedEngine, "Engine didn't match");
 		
 		
 		

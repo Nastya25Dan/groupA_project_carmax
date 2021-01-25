@@ -2,5 +2,56 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+    <classes>
+      <class name="nihal.Sprint1SearchJobTest"/>
+      <class name="elena.Sprint2DataPrTitleCheckTest"/>
+      <class name="tests.BurcuCreateAccountTest"/>
+      <class name="tests.BurcuSearchBoxTest"/>
+      <class name="burcu.Sprint1UrlTest"/>
+      <class name="nastya.Sprint2PopularUsedCarsTest"/>
+      <class name="elena.Sprint2EcoFriendlyTest"/>
+      <class name="burcu.Sprint1SignInTest"/>
+      <class name="furkan.Sprint2ComparedSavedCarTest"/>
+      <class name="furkan.Sprint2TradeInTest"/>
+      <class name="nastya.Sprint1Tests"/>
+      <class name="nihal.Sprint1HowItWorksTest"/>
+      <class name="furkan.Sprint2SetStoreTest"/>
+      <class name="nastya.Sprint2TradeInTest"/>
+      <class name="nihal.Sprint2ModelTest"/>
+      <class name="nihal.Sprint2CheckLink"/>
+      <class name="elena.Sprint2EngineCheckTest"/>
+      <class name="burcu.Sprint1VerifyProfileTest"/>
+      <class name="elena.Sprint1ByPriceCheckTest"/>
+      <class name="nihal.Sprint2ScheduleTest"/>
+      <class name="burcu.Sprint2CheckFiltersTest2"/>
+      <class name="burcu.Sprint2CheckFiltersTest1"/>
+      <class name="nihal.Sprint1Policy2Test"/>
+      <class name="elena.Sprint1SuvsURLCheckTest"/>
+      <class name="burcu.Sprint2TitleTestForMake"/>
+      <class name="elena.Sprint1ByBrandCheckTest"/>
+      <class name="tests.BurcuSignIn2Test"/>
+      <class name="elena.Sprint1SuvsFiltersCheckTest"/>
+      <class name="nastya.Sprint2ChangeLocationTest"/>
+      <class name="burcu.Sprint2MakeLinkTest"/>
+      <class name="tests.BurcuSignInTest"/>
+      <class name="elena.Sprint2AgeCheckForLoanTest"/>
+      <class name="furkan.Sprint1SavedCarTest"/>
+      <class name="nihal.Sprint1FooterTest"/>
+      <class name="nastya.Sprint2ReasearchMoreTest"/>
+      <class name="elena.Sprint2ShopByYearTest"/>
+      <class name="burcu.Sprint1SignIn2Test"/>
+      <class name="furkan.Sprint1SavedSearchTest"/>
+      <class name="burcu.Sprint1CreateAccountTest"/>
+      <class name="nihal.Sprint2FindStoreTest"/>
+      <class name="furkan.Sprint1SignInTest"/>
+      <class name="furkan.Sprint1RegisterTest"/>
+      <class name="elena.Sprint1ByBrandFiltersCheckTest"/>
+      <class name="nihal.Sprint1PolicyTest"/>
+      <class name="tests.BurcuVerifyProfile"/>
+      <class name="nastya.Sprint2BudgetSearchTest"/>
+      <class name="nihal.Sprint2MediaTest"/>
+      <class name="tests.BurcuUrlTest"/>
+      <class name="burcu.Sprint1SearchBoxTest"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

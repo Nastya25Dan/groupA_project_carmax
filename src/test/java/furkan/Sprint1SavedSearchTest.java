@@ -1,5 +1,7 @@
 package furkan;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.By;
@@ -53,7 +55,7 @@ public class Sprint1SavedSearchTest extends TestBase {
 		sc.saveButton.click();
 		String expectedMessage = "Search saved";
 		String actualMessage = sc.searchSavedMessage.getText();
-		soft.assertTrue(expectedMessage.contains(actualMessage));
+		AssertJUnit.assertTrue(expectedMessage.contains(actualMessage));
 		BrowserUtils.waitFor(5);
 		sc.gotIt.click();
 
@@ -63,7 +65,7 @@ public class Sprint1SavedSearchTest extends TestBase {
 		as.savedSearches.click();
 		String car = Driver.getDriver().findElement(By.xpath("//h3[@class='kmx-typography--display-1']")).getText();
 		System.out.println(car);
-		soft.assertTrue(car.contains(ConfigReader.getProperty("car")));
+		AssertJUnit.assertTrue(car.contains(ConfigReader.getProperty("car")));
 	
 	
 	

@@ -1,5 +1,7 @@
 package burcu;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
@@ -48,7 +50,7 @@ public class Sprint2TitleTestForMake extends TestBase {
 		
 		System.out.println(driver.getCurrentUrl());
 		
-		assertTrue(driver.getCurrentUrl().contains("acura/audi"));
+		AssertJUnit.assertTrue(driver.getCurrentUrl().contains("acura/audi"));
 		
 	}	
 

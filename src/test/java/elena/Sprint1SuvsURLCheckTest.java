@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
@@ -22,6 +24,6 @@ public class Sprint1SuvsURLCheckTest extends TestBase{
 		String expectedURL = "https://www.carmax.com/cars/sport-utilities";
 		String actualURL = driver.getCurrentUrl();
 		
-		assertEquals(actualURL, expectedURL, "Urls didn't match");
+		AssertJUnit.assertEquals(actualURL, expectedURL, "Urls didn't match");
 	}
 }

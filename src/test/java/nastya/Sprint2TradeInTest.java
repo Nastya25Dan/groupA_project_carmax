@@ -1,5 +1,7 @@
 package nastya;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.util.List;
@@ -46,9 +48,9 @@ public class Sprint2TradeInTest extends TestBase{
 		
 		
 		BrowserUtils.waitFor(3);
-		soft.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_year")));
-		soft.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_make")));
-		soft.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_model")));
+		AssertJUnit.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_year")));
+		AssertJUnit.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_make")));
+		AssertJUnit.assertTrue(tradeIn.result.getText().contains(ConfigReader.getProperty("appraisel_model")));
 		
 		
 //		assertTrue(result.contains(year));

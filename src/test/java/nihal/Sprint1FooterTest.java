@@ -1,6 +1,8 @@
 package nihal;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import pages.NihalPage;
 import tests.TestBase;
 import utilities.BrowserUtils;
@@ -22,7 +24,7 @@ public class Sprint1FooterTest extends TestBase {
         System.out.println(expectedResult);
 //        Collections.sort(actualResult);
 //        Collections.sort(expectedResult);
-        assertEquals(actualResult,expectedResult);
+        AssertJUnit.assertEquals(actualResult,expectedResult);
 
     }
 

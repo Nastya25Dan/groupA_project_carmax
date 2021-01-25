@@ -1,4 +1,6 @@
 package nihal;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import  org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,7 +21,7 @@ public class Sprint2MediaTest extends TestBase {
         n.emailadress.sendKeys(email);
         n.mediaSubmit.click();
         n.forStudentslink.click();
-        assertTrue(driver.getTitle().contains("For Students"));
+        AssertJUnit.assertTrue(driver.getTitle().contains("For Students"));
 
     }
 

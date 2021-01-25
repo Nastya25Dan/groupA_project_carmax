@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
@@ -28,7 +30,7 @@ public class Sprint2ShopByYearTest extends TestBase{
 		String actualYear = cc.year.getText().toString();
 
 		String expectedYear = "2019";
-		assertEquals(actualYear,expectedYear);
+		AssertJUnit.assertEquals(actualYear,expectedYear);
 		
 	}
 	

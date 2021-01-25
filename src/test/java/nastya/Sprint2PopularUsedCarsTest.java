@@ -1,5 +1,7 @@
 package nastya;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -37,7 +39,7 @@ public class Sprint2PopularUsedCarsTest extends TestBase{
 		Collections.sort(actualLinkNames);
 		Collections.sort(expectedLinkNames);
 		
-		assertEquals(actualLinkNames, expectedLinkNames);
+		AssertJUnit.assertEquals(actualLinkNames, expectedLinkNames);
 		
 		
 		

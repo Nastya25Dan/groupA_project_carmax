@@ -1,6 +1,8 @@
 package furkan;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 import org.openqa.selenium.By;
@@ -33,7 +35,7 @@ public class Sprint2SetStoreTest extends TestBase {
 		mp.storeSearch.sendKeys(ConfigReader.getProperty("zip"),Keys.ENTER);
 		BrowserUtils.waitFor(4);
 		String search=Driver.getDriver().findElement(By.xpath("//h1[@class='stores-list--title show-tablet-desktop-block kmx-typography--display-3']")).getText();
-		assertTrue(search.contains(ConfigReader.getProperty("zip")));
+		AssertJUnit.assertTrue(search.contains(ConfigReader.getProperty("zip")));
 	
 	
 	

@@ -1,4 +1,6 @@
 package nihal;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.Nihal2Page;
@@ -14,7 +16,7 @@ public class Sprint2CheckLink extends TestBase{
         Nihal2Page n = new Nihal2Page();
         BrowserUtils.scroll(0,100);
         n.viewInventory.click();
-        assertTrue(driver.getCurrentUrl().contains("cars/all"));
+        AssertJUnit.assertTrue(driver.getCurrentUrl().contains("cars/all"));
     }
 
     @Test
@@ -22,6 +24,6 @@ public class Sprint2CheckLink extends TestBase{
         Nihal2Page n = new Nihal2Page();
         BrowserUtils.scroll(0,100);
         n.investorRelations.click();
-        assertTrue(driver.getPageSource().contains("Investor Relations"));
+        AssertJUnit.assertTrue(driver.getPageSource().contains("Investor Relations"));
     }
 }

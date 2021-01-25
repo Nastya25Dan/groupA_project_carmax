@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
@@ -17,11 +19,11 @@ public class Sprint1ByPriceCheckTest extends TestBase{
 		
 		String actualPriceRang = cc.actualPriceRange.getText().toString();
 		String expectedPriceRange = "Used cars Under $10,000 for Sale";
-		assertEquals(actualPriceRang, expectedPriceRange, "Price didn't match");
+		AssertJUnit.assertEquals(actualPriceRang, expectedPriceRange, "Price didn't match");
 		
 		int k = Integer.parseInt(cc.numberOfFilters.getText().toString().substring(1, 2));
 		int expectedNumberOfFilters = 1;
-		assertEquals(k, expectedNumberOfFilters, "Number of filters didn't match");
+		AssertJUnit.assertEquals(k, expectedNumberOfFilters, "Number of filters didn't match");
 		
 		
 				

@@ -1,4 +1,6 @@
 package nihal;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import  org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -22,7 +24,7 @@ public class Sprint2ScheduleTest extends TestBase{
         n.phone.sendKeys(phoneNumber);
         n.email.sendKeys(email);
         n.nextButton.click();
-        assertTrue(driver.getTitle().contains("Schedule an App"));
+        AssertJUnit.assertTrue(driver.getTitle().contains("Schedule an App"));
 
     }
     @DataProvider(name="schedule")

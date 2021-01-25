@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -34,12 +36,12 @@ public class Sprint1SuvsFiltersCheckTest extends TestBase{
 		BrowserUtils.waitForTitleContains("SUVs", 5);
 		int lengthFilters = cc.filters.size();
 		int expectedLengthFilters = 14;
-		assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");
+		AssertJUnit.assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");
 		
 		
 int length = cc.recommendedFilters.size();
 		int expectedLength = 28;
-		assertEquals(length, expectedLength, "Length didn't match");
+		AssertJUnit.assertEquals(length, expectedLength, "Length didn't match");
 
 	}
 	

@@ -1,5 +1,7 @@
 package burcu;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import java.util.List;
@@ -25,7 +27,7 @@ public class Sprint2CheckFiltersTest1 extends TestBase {
 	    
 	    BrowserUtils.waitForPageToLoad(3000);
 	    
-	    assertTrue(driver.getPageSource().contains("Filters"));
+	    AssertJUnit.assertTrue(driver.getPageSource().contains("Filters"));
 	
 
 
@@ -42,7 +44,7 @@ public class Sprint2CheckFiltersTest1 extends TestBase {
 		
 		BrowserUtils.waitForPageToLoad(3000);
 		    
-		assertTrue(driver.getPageSource().contains("Filters"));
+		AssertJUnit.assertTrue(driver.getPageSource().contains("Filters"));
 		
 		
 }

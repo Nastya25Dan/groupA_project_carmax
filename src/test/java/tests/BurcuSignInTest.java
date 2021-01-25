@@ -1,6 +1,8 @@
 package tests;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import pages.BurcuPage;
 
 import static org.testng.Assert.assertTrue;
@@ -13,7 +15,7 @@ public class BurcuSignInTest extends TestBase {
         BurcuPage b = new BurcuPage();
         b.icon.click();
         actions.moveToElement(b.signin).click().build().perform();
-        assertTrue(driver.getTitle().contains("Sign In "));
+        AssertJUnit.assertTrue(driver.getTitle().contains("Sign In "));
 
     }
 }

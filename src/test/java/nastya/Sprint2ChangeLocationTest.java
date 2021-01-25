@@ -1,5 +1,7 @@
 package nastya;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.interactions.Action;
@@ -30,7 +32,7 @@ public class Sprint2ChangeLocationTest extends TestBase{
 		ch.changeZip.sendKeys("21041");
 		ch.submit.click();
 //		System.out.println(ch.selected.getText());
-		assertTrue( ch.selected.getText().contains("STORE SELECTED"));
+		AssertJUnit.assertTrue( ch.selected.getText().contains("STORE SELECTED"));
 	}
 
 }

@@ -1,5 +1,7 @@
 package nihal;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -16,7 +18,7 @@ public class Sprint2FindStoreTest extends TestBase {
         BrowserUtils.scroll(0,100);
         n.findStore.click();
         n.searchZip.sendKeys(zip+ Keys.ENTER);
-        assertTrue(driver.getPageSource().contains("CarMax stores near "+zip));
+        AssertJUnit.assertTrue(driver.getPageSource().contains("CarMax stores near "+zip));
 
     }
 

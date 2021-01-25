@@ -1,5 +1,7 @@
 package furkan;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.*;
 
 import java.util.List;
@@ -40,7 +42,7 @@ public class Sprint1SignInTest extends TestBase {
 		as.profileIcon.click();
 		List<WebElement>list = Driver.getDriver().findElements(By.xpath("//li[@class='header-footer-menu-list-item']"));
 		int expectedNum=3;
-		assertTrue(expectedNum==list.size());
+		AssertJUnit.assertTrue(expectedNum==list.size());
 	}
 	@Test
 	public void positiveSignIn() {
@@ -60,7 +62,7 @@ public class Sprint1SignInTest extends TestBase {
 		as.myProfile.click();
 		BrowserUtils.waitFor(5);
 		WebElement customer=Driver.getDriver().findElement(By.xpath("//h4[@class='kmx-typography--headline-1']"));
-		assertTrue(customer.getText().contains(ConfigReader.getProperty("name")));
+		AssertJUnit.assertTrue(customer.getText().contains(ConfigReader.getProperty("name")));
 	}
 	
 	@DataProvider

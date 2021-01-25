@@ -1,6 +1,8 @@
 package furkan;
 
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
@@ -17,7 +19,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 public class Sprint1SavedCarTest extends TestBase {
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void savedSearch() {
 	
 		SoftAssert soft = new SoftAssert();
@@ -52,7 +54,7 @@ public class Sprint1SavedCarTest extends TestBase {
 		as.savedCars.click();
 		String car = Driver.getDriver().findElement(By.xpath("//h4[@class='kmx-typography--headline-1']")).getText();
 		System.out.println(car);
-		assertTrue(car.contains(ConfigReader.getProperty("save_car")));
+		AssertJUnit.assertTrue(car.contains(ConfigReader.getProperty("save_car")));
 	
 	
 	

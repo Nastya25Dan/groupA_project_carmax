@@ -1,5 +1,7 @@
 package nastya;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.WebElement;
@@ -18,7 +20,7 @@ public class Sprint2ReasearchMoreTest extends TestBase {
 		m.researchButton.click();
 
 		for (WebElement sub : m.subHeaders) {
-			assertTrue(sub.getText().contains("best-selling"));
+			AssertJUnit.assertTrue(sub.getText().contains("best-selling"));
 		}
 
 		m.bestUsedCars.click();
@@ -42,7 +44,7 @@ public class Sprint2ReasearchMoreTest extends TestBase {
 			String pr = content.getText();
 			try {
 				price = Integer.parseInt(pr.replaceAll("$,*", ""));
-				assertTrue(price < budgetUnder30);
+				AssertJUnit.assertTrue(price < budgetUnder30);
 			} catch (NumberFormatException ex) {
 
 			}

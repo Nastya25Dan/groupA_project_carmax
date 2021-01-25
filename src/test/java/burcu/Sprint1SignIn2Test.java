@@ -1,6 +1,7 @@
 package burcu;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import pages.BurcuPage;
 import utilities.BrowserUtils;
 

@@ -1,5 +1,7 @@
 package elena;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -53,7 +55,7 @@ public class Sprint2AgeCheckForLoanTest extends TestBase{
 		String actualErrorText = cc.errorMessage.getText().toString();
 		String expectedErrorText = "Applicant must be 18 years or older.";
 		
-		Assert.assertEquals(actualErrorText, expectedErrorText);
+		AssertJUnit.assertEquals(actualErrorText, expectedErrorText);
 		
 	}
 }

@@ -1,5 +1,7 @@
 package furkan;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -38,7 +40,7 @@ public class Sprint1RegisterTest extends TestBase {
 		rp.confirmPassword.sendKeys(confirmPassword);
 		rp.registerButton.click();
 		String title="Browse used cars and new cars online";
-		assertTrue(Driver.getDriver().getTitle().contains(title));
+		AssertJUnit.assertTrue(Driver.getDriver().getTitle().contains(title));
 		
 			
 	}

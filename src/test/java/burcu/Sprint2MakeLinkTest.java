@@ -1,5 +1,7 @@
 package burcu;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -45,7 +47,7 @@ public class Sprint2MakeLinkTest extends TestBase{
 	
 	System.out.println(listOfMake);
     
-    assertEquals(listOfMake.size(), 35);
+    AssertJUnit.assertEquals(listOfMake.size(), 35);
 	
 	
 	

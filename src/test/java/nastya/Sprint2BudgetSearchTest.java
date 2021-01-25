@@ -1,6 +1,8 @@
 package nastya;
 
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -41,7 +43,7 @@ public class Sprint2BudgetSearchTest extends TestBase{
 		budgetPage.downPayment.sendKeys("3500");
 
 		Select select = new Select(budgetPage.creditScoreVeryGood);
-		select.selectByVisibleText("Very Good (740-799 FICO® Score)");
+		select.selectByVisibleText("Very Good (740-799 FICOï¿½ Score)");
 		BrowserUtils.waitForPageToLoad(5);
 
 		BrowserUtils.hover(budgetPage.seeCars);
@@ -63,9 +65,9 @@ public class Sprint2BudgetSearchTest extends TestBase{
 		System.out.println(filterType);//SUVs
 		System.out.println(maxAmount);//35311
 
-		assertTrue(suv.contains(filterType));
+		AssertJUnit.assertTrue(suv.contains(filterType));
 		
-		assertEquals(maxAmount,title);
+		AssertJUnit.assertEquals(maxAmount,title);
 		
 	}
 
