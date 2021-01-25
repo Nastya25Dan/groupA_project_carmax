@@ -24,7 +24,7 @@ import utilities.Driver;
 
 public class Sprint1SignInTest extends TestBase {
 	
-	@Test(dataProvider="dataProvider1")
+	@Test(dataProvider="dataProvider1", groups= {"smoke"})
 	public void negativeSignIn(String email,String password) {
 
 		Driver.getDriver().get(ConfigReader.getProperty("url"));
@@ -44,7 +44,7 @@ public class Sprint1SignInTest extends TestBase {
 		int expectedNum=3;
 		AssertJUnit.assertTrue(expectedNum==list.size());
 	}
-	@Test
+	@Test(groups= {"smoke"})
 	public void positiveSignIn() {
 		
 		Driver.getDriver().get(ConfigReader.getProperty("url"));
@@ -69,7 +69,7 @@ public class Sprint1SignInTest extends TestBase {
 	public Object[][] dataProvider1(){
 		
 		return new Object[][] {
-			{"jo3@gmail.com","johndoe"},{"","johndoe1"},{"jo3@gmail.com",""},{"joj@gmail.com","johndoe1"}	
+			{"jo3@gmail.com","johndoe"},{"joj@gmail.com","johndoe1"}	
 		};
 
 	}

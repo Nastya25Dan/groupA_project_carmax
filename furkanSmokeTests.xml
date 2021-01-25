@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Smoke Tests Suite">
   <test thread-count="5" name="furkan smoke Test">
   
   <groups>
@@ -10,7 +10,8 @@
   </groups>
   
   <classes>
-  <class name="furkan.Sprint1SavedCarTest"></class>
+  <class name="furkan.Sprint1SignInTest"></class>
+  <class name="furkan.Sprint2SignOutTest"></class>
   </classes>
   
   </test> <!-- Test -->

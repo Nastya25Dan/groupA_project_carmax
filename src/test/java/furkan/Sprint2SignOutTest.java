@@ -18,7 +18,7 @@ public class Sprint2SignOutTest extends TestBase {
 	
 	
 	@Parameters("browser")
-	@Test()
+	@Test(groups= {"smoke"})
 public void signOut() {
 		
 		MainPage mp = new MainPage();

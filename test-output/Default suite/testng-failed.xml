@@ -3,49 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <class name="nastya.Sprint2TradeInTest">
-=======
-<<<<<<< HEAD
-      <class name="furkan.Sprint2ComparedSavedCarTest">
-=======
-<<<<<<< HEAD
-      <class name="elena.Sprint1SuvsFiltersCheckTest">
->>>>>>> eda32fdd5146a489a02a99eadb15e0393d744807
+      <class name="furkan.Sprint1SignInTest">
         <methods>
-          <include name="tearDownReport"/>
-<<<<<<< HEAD
-          <include name="setUpReport"/>
-          <include name="tradeYourCar"/>
-        </methods>
-      </class> <!-- nastya.Sprint2TradeInTest -->
-=======
-          <include name="setupMethod"/>
-          <include name="suvsFiltersCheck"/>
-=======
-<<<<<<< HEAD
->>>>>>> 910f9a792ca24551f6fd3d0d1d4c02cabc86afa6
-      <class name="furkan.Sprint2TradeInTest">
-        <methods>
+          <include name="negativeSignIn" invocation-numbers="1 2"/>
           <include name="setUpReport"/>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
-          <include name="tradeIn"/>
           <include name="teardownMethod"/>
         </methods>
-      </class> <!-- furkan.Sprint2TradeInTest -->
-<<<<<<< HEAD
-=======
-=======
-      </class> <!-- elena.Sprint2DataPrTitleCheckTest -->
->>>>>>> 77cebd4f43fa77ea2730773454b7e9a3729dc1f4
->>>>>>> 463c47c105f8731c3e1cd37c8420d40efe4d02a4
->>>>>>> fa568acf8d530b374de9b258a7579acdaafa9ca0
->>>>>>> 4dcc0d86bce7dcac824c0c0626c0a018adc4cbfb
->>>>>>> eda32fdd5146a489a02a99eadb15e0393d744807
->>>>>>> 910f9a792ca24551f6fd3d0d1d4c02cabc86afa6
+      </class> <!-- furkan.Sprint1SignInTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

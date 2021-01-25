@@ -10,6 +10,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.asserts.SoftAssert;
 
+import com.github.javafaker.Faker;
+
 import pages.AfterSign;
 import pages.MainPage;
 import pages.SearchCar;
@@ -33,6 +35,7 @@ public class Sprint1SavedCarTest extends TestBase {
 		s.userPassword.sendKeys(ConfigReader.getProperty("password"));
 		s.signInButton.click();
 		BrowserUtils.waitFor(10);
+		
 		
 		mp.mainSearchBox.sendKeys(ConfigReader.getProperty("save_car"),Keys.ENTER);
 		SearchCar sc = new SearchCar();
