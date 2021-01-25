@@ -1,15 +1,13 @@
 package elena;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
 import pages.CarsChoicesPage;
 import pages.LoginPage;
-
-
 public class Sprint1ByBrandFiltersCheckTest extends TestBase{
 	@Test(groups = {"smoke"})
 	public void byBrandFiltersCheck() {
@@ -21,11 +19,11 @@ public class Sprint1ByBrandFiltersCheckTest extends TestBase{
 				
 		int lengthFilters = cc.filters.size();
 		int expectedLengthFilters = 14;
-		AssertJUnit.assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");
+		assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");
 		
 		int length = cc.recommendedFilters.size();
 		int expectedLength = 23;
-		AssertJUnit.assertEquals(length, expectedLength, "Length didn't match");
+		assertEquals(length, expectedLength, "Length didn't match");
 		
 }
 }
