@@ -22,9 +22,9 @@ public class Sprint2TradeInTest extends TestBase{
 		BrowserUtils.scroll(0, 2000);
 		BrowserUtils.waitFor(5);
 		mp.tradeInYear.sendKeys(ConfigReader.getProperty("trade_in_year"));
-		BrowserUtils.waitForClickablility(mp.tradeInMake, 3);
+		BrowserUtils.waitForClickablility(mp.tradeInMake, 5);
 		mp.tradeInMake.sendKeys(ConfigReader.getProperty("trade_in_make"));
-		BrowserUtils.waitForClickablility(mp.tradeInModel, 3);
+		BrowserUtils.waitForClickablility(mp.tradeInModel, 5);
 		mp.tradeInModel.sendKeys(ConfigReader.getProperty("trade_in_model"));
 		BrowserUtils.waitForClickablility(mp.tradeInMileage, 3);
 		mp.tradeInMileage.sendKeys(ConfigReader.getProperty("trade_in_mileage"));
