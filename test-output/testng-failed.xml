@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Smoke Tests Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="furkan smoke Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="elena.Sprint1SuvsFiltersCheckTest">
+      <class name="furkan.Sprint1SignInTest">
         <methods>
+          <include name="negativeSignIn" invocation-numbers="1"/>
+          <include name="setUpReport"/>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
-          <include name="suvsFiltersCheck"/>
           <include name="teardownMethod"/>
-          <include name="setUpReport"/>
         </methods>
-      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
+      </class> <!-- furkan.Sprint1SignInTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- furkan smoke Test(failed) -->
+</suite> <!-- Failed suite [Smoke Tests Suite] -->

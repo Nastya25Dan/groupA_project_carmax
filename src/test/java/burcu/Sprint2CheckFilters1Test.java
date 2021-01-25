@@ -13,7 +13,7 @@ import pages.Burcu2Page;
 import utilities.BrowserUtils;
 
 
-public class Sprint2CheckFiltersTest1 extends TestBase {
+public class Sprint2CheckFilters1Test extends TestBase {
 	
 	
 	

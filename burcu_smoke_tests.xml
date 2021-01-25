@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="smoke tests">
+<suite name="burcu smoke tests">
 
 
-	<test thread-count="5" name="smoke tests">
+	<test thread-count="5" name="burcu smoke tests">
 
 		<groups>
 			<run>
@@ -19,8 +19,8 @@
 
 		<classes>
 
-			<class name="nastya.Sprint2ResearchMoreTest" />
-			<class name="nastya.Sprint2PopularUsedCarsTest" />
+			<class name="burcu.Sprint2CheckFilters2Test" />
+			<class name="burcu.Sprint2CompareLinksTest" />
 
 
 

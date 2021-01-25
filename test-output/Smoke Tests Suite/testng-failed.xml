@@ -8,18 +8,9 @@
       </run>
     </groups>
     <classes>
-      <class name="furkan.Sprint1SavedCarTest">
-        <methods>
-          <include name="setUpReport"/>
-          <include name="savedSearch"/>
-          <include name="tearDownReport"/>
-          <include name="setupMethod"/>
-          <include name="teardownMethod"/>
-        </methods>
-      </class> <!-- furkan.Sprint1SavedCarTest -->
       <class name="furkan.Sprint1SignInTest">
         <methods>
-          <include name="negativeSignIn" invocation-numbers="1 2"/>
+          <include name="negativeSignIn" invocation-numbers="1"/>
           <include name="setUpReport"/>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>

@@ -13,7 +13,7 @@ import utilities.BrowserUtils;
 public class Sprint2CompareLinksTest extends TestBase {
 
 	@Parameters("browser")
-	@Test
+	@Test(groups= {"smoke"})
 	
 	public void compareLinks() {
 		

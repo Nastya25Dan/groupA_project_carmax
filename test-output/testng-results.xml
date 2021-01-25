@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-25T13:42:25 CST" name="Default suite" finished-at="2021-01-25T13:42:44 CST" duration-ms="18906">
+  <suite started-at="2021-01-25T14:07:14 CST" name="burcu smoke tests" finished-at="2021-01-25T14:07:52 CST" duration-ms="37789">
     <groups>
       <group name="smoke">
-        <method signature="Sprint1SuvsFiltersCheckTest.suvsFiltersCheck()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" name="suvsFiltersCheck" class="elena.Sprint1SuvsFiltersCheckTest"/>
+        <method signature="Sprint2CheckFilters2Test.checkFilterContent()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" name="checkFilterContent" class="burcu.Sprint2CheckFilters2Test"/>
+        <method signature="Sprint2CheckFilters2Test.checkFilterSize()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" name="checkFilterSize" class="burcu.Sprint2CheckFilters2Test"/>
+        <method signature="Sprint2CompareLinksTest.compareLinks()[pri:0, instance:burcu.Sprint2CompareLinksTest@9f116cc]" name="compareLinks" class="burcu.Sprint2CompareLinksTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-01-25T13:42:25 CST" name="Default test" finished-at="2021-01-25T13:42:44 CST" duration-ms="18906">
-      <class name="elena.Sprint1SuvsFiltersCheckTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:25 CST" name="setUpReport" finished-at="2021-01-25T13:42:25 CST" duration-ms="290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:25 CST" name="setupMethod" finished-at="2021-01-25T13:42:29 CST" duration-ms="3733" status="PASS">
+    <test started-at="2021-01-25T14:07:14 CST" name="burcu smoke tests" finished-at="2021-01-25T14:07:52 CST" duration-ms="37789">
+      <class name="burcu.Sprint2CompareLinksTest">
+        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:burcu.Sprint2CompareLinksTest@9f116cc]" started-at="2021-01-25T14:07:35 CST" name="setupMethod" finished-at="2021-01-25T14:07:38 CST" duration-ms="3054" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -23,26 +21,80 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="suvsFiltersCheck()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:29 CST" name="suvsFiltersCheck" finished-at="2021-01-25T13:42:44 CST" duration-ms="14979" status="PASS">
+        <test-method signature="compareLinks()[pri:0, instance:burcu.Sprint2CompareLinksTest@9f116cc]" started-at="2021-01-25T14:07:38 CST" name="compareLinks" finished-at="2021-01-25T14:07:52 CST" duration-ms="13395" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- suvsFiltersCheck -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:44 CST" name="teardownMethod" finished-at="2021-01-25T13:42:44 CST" duration-ms="173" status="PASS">
+        </test-method> <!-- compareLinks -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:burcu.Sprint2CompareLinksTest@9f116cc]" started-at="2021-01-25T14:07:52 CST" name="teardownMethod" finished-at="2021-01-25T14:07:52 CST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=suvsFiltersCheck status=SUCCESS method=Sprint1SuvsFiltersCheckTest.suvsFiltersCheck()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7] output={null}]]]>
+                <![CDATA[[TestResult name=compareLinks status=SUCCESS method=Sprint2CompareLinksTest.compareLinks()[pri:0, instance:burcu.Sprint2CompareLinksTest@9f116cc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:44 CST" name="tearDownReport" finished-at="2021-01-25T13:42:44 CST" duration-ms="318" status="PASS">
+      </class> <!-- burcu.Sprint2CompareLinksTest -->
+      <class name="burcu.Sprint2CheckFilters2Test">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:14 CST" name="setUpReport" finished-at="2021-01-25T14:07:14 CST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:14 CST" name="setupMethod" finished-at="2021-01-25T14:07:18 CST" duration-ms="3363" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="checkFilterContent()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:18 CST" name="checkFilterContent" finished-at="2021-01-25T14:07:25 CST" duration-ms="7794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFilterContent -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:25 CST" name="teardownMethod" finished-at="2021-01-25T14:07:26 CST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkFilterContent status=SUCCESS method=Sprint2CheckFilters2Test.checkFilterContent()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:26 CST" name="setupMethod" finished-at="2021-01-25T14:07:28 CST" duration-ms="2858" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="checkFilterSize()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:28 CST" name="checkFilterSize" finished-at="2021-01-25T14:07:35 CST" duration-ms="6778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFilterSize -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:35 CST" name="teardownMethod" finished-at="2021-01-25T14:07:35 CST" duration-ms="128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkFilterSize status=SUCCESS method=Sprint2CheckFilters2Test.checkFilterSize()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:burcu.Sprint2CheckFilters2Test@6b927fb]" started-at="2021-01-25T14:07:52 CST" name="tearDownReport" finished-at="2021-01-25T14:07:52 CST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- burcu.Sprint2CheckFilters2Test -->
+    </test> <!-- burcu smoke tests -->
+  </suite> <!-- burcu smoke tests -->
 </testng-results>

@@ -10,7 +10,7 @@ import pages.Burcu2Page;
 
 import utilities.BrowserUtils;
 
-public class Sprint2TitleTestForMake extends TestBase {
+public class Sprint2TitleForMakeTest extends TestBase {
 	
 	
 

@@ -19,11 +19,11 @@ import pages.Burcu2Page;
 import utilities.BrowserUtils;
 
 
-public class Sprint2CheckFiltersTest2 extends TestBase {
+public class Sprint2CheckFilters2Test extends TestBase {
 	
 	
 		
-		@Test
+		@Test(groups= {"smoke"})
 		
 		public void checkFilterSize() {
 			
@@ -43,7 +43,7 @@ public class Sprint2CheckFiltersTest2 extends TestBase {
 
 }
 		
-		@Test
+		@Test(groups= {"smoke"})
 		
 		public void checkFilterContent() {
 			

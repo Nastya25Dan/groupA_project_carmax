@@ -36,7 +36,7 @@ public abstract class TestBase {
     protected static ExtentTest logger;  // needs to be initialized in each test
     protected static int count;
     
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void setUpReport() {
         reporter = new ExtentReports();
         String path = System.getProperty("user.dir") + "/test-output/extentReports/index.html";
@@ -97,7 +97,7 @@ public abstract class TestBase {
     }
     
     
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void tearDownReport() {
         reporter.flush();
     }
