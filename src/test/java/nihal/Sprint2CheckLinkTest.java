@@ -9,7 +9,7 @@ import utilities.BrowserUtils;
 
 import static org.testng.Assert.assertTrue;
 
-public class Sprint2CheckLink extends TestBase{
+public class Sprint2CheckLinkTest extends TestBase{
 
     @Test
     public void clickLink(){
