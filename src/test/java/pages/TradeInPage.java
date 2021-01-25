@@ -21,15 +21,12 @@ public class TradeInPage {
 	@FindBy (xpath = "(//select[@class='mdc-select__native-control'])[3]")
 	public WebElement modelBox;
 	
-	@FindBy (id = "(//input[@class='mdc-text-field__input'])[4]")
+	@FindBy (xpath = "(//input[@class='mdc-text-field__input'])[4]")
 	public WebElement mileageBox;
 	
 	@FindBy (id = "appraisal-form-submit")
 	public WebElement seeYours;
-	
-//	@FindBy (xpath = "//a[@name='Make an appointment']")
-//	public WebElement makeAppt; ->//button
-	
+
 	@FindBy (xpath = "//h3[@class='vehicle-found-heading kmx-typography--display-2']")
 	public WebElement result; 
 }
