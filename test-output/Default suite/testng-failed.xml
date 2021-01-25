@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="furkan.Sprint1SignInTest">
+      <class name="elena.Sprint1SuvsFiltersCheckTest">
         <methods>
-          <include name="negativeSignIn" invocation-numbers="1 2"/>
-          <include name="setUpReport"/>
           <include name="tearDownReport"/>
           <include name="setupMethod"/>
+          <include name="suvsFiltersCheck"/>
           <include name="teardownMethod"/>
+          <include name="setUpReport"/>
         </methods>
-      </class> <!-- furkan.Sprint1SignInTest -->
+      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-25T13:02:08 CST" name="Smoke Tests Suite" finished-at="2021-01-25T13:03:37 CST" duration-ms="89380">
+  <suite started-at="2021-01-25T13:42:25 CST" name="Default suite" finished-at="2021-01-25T13:42:44 CST" duration-ms="18906">
     <groups>
       <group name="smoke">
-        <method signature="Sprint1SignInTest.negativeSignIn(java.lang.String, java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" name="negativeSignIn" class="furkan.Sprint1SignInTest"/>
-        <method signature="Sprint1SignInTest.positiveSignIn()[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" name="positiveSignIn" class="furkan.Sprint1SignInTest"/>
-        <method signature="Sprint2SignOutTest.signOut()[pri:0, instance:furkan.Sprint2SignOutTest@245b4bdc]" name="signOut" class="furkan.Sprint2SignOutTest"/>
+        <method signature="Sprint1SuvsFiltersCheckTest.suvsFiltersCheck()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" name="suvsFiltersCheck" class="elena.Sprint1SuvsFiltersCheckTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2021-01-25T13:02:08 CST" name="furkan smoke Test" finished-at="2021-01-25T13:03:37 CST" duration-ms="89380">
-      <class name="furkan.Sprint1SignInTest">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:07 CST" name="setUpReport" finished-at="2021-01-25T13:02:08 CST" duration-ms="194" status="PASS">
+    <test started-at="2021-01-25T13:42:25 CST" name="Default test" finished-at="2021-01-25T13:42:44 CST" duration-ms="18906">
+      <class name="elena.Sprint1SuvsFiltersCheckTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:25 CST" name="setUpReport" finished-at="2021-01-25T13:42:25 CST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:08 CST" name="setupMethod" finished-at="2021-01-25T13:02:11 CST" duration-ms="3782" status="PASS">
+        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:25 CST" name="setupMethod" finished-at="2021-01-25T13:42:29 CST" duration-ms="3733" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -25,124 +23,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="negativeSignIn(java.lang.String, java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:11 CST" name="negativeSignIn" data-provider="dataProvider1" finished-at="2021-01-25T13:02:23 CST" duration-ms="11996" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jo3@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[johndoe]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="suvsFiltersCheck()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:29 CST" name="suvsFiltersCheck" finished-at="2021-01-25T13:42:44 CST" duration-ms="14979" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeSignIn -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:23 CST" name="teardownMethod" finished-at="2021-01-25T13:02:24 CST" duration-ms="175" status="PASS">
+        </test-method> <!-- suvsFiltersCheck -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:44 CST" name="teardownMethod" finished-at="2021-01-25T13:42:44 CST" duration-ms="173" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=negativeSignIn status=SUCCESS method=Sprint1SignInTest.negativeSignIn(java.lang.String, java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af] output={null}]]]>
+                <![CDATA[[TestResult name=suvsFiltersCheck status=SUCCESS method=Sprint1SuvsFiltersCheckTest.suvsFiltersCheck()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:24 CST" name="setupMethod" finished-at="2021-01-25T13:02:25 CST" duration-ms="1864" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="negativeSignIn(java.lang.String, java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:25 CST" name="negativeSignIn" data-provider="dataProvider1" finished-at="2021-01-25T13:02:37 CST" duration-ms="11347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[joj@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[johndoe1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeSignIn -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:37 CST" name="teardownMethod" finished-at="2021-01-25T13:02:37 CST" duration-ms="168" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=negativeSignIn status=SUCCESS method=Sprint1SignInTest.negativeSignIn(java.lang.String, java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:37 CST" name="setupMethod" finished-at="2021-01-25T13:02:40 CST" duration-ms="2547" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="positiveSignIn()[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:02:40 CST" name="positiveSignIn" finished-at="2021-01-25T13:03:10 CST" duration-ms="30945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- positiveSignIn -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:03:10 CST" name="teardownMethod" finished-at="2021-01-25T13:03:11 CST" duration-ms="136" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=positiveSignIn status=SUCCESS method=Sprint1SignInTest.positiveSignIn()[pri:0, instance:furkan.Sprint1SignInTest@5876a9af] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:furkan.Sprint1SignInTest@5876a9af]" started-at="2021-01-25T13:03:37 CST" name="tearDownReport" finished-at="2021-01-25T13:03:37 CST" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:elena.Sprint1SuvsFiltersCheckTest@294425a7]" started-at="2021-01-25T13:42:44 CST" name="tearDownReport" finished-at="2021-01-25T13:42:44 CST" duration-ms="318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- furkan.Sprint1SignInTest -->
-      <class name="furkan.Sprint2SignOutTest">
-        <test-method is-config="true" signature="setupMethod(java.lang.String)[pri:0, instance:furkan.Sprint2SignOutTest@245b4bdc]" started-at="2021-01-25T13:03:11 CST" name="setupMethod" finished-at="2021-01-25T13:03:14 CST" duration-ms="3092" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method signature="signOut()[pri:0, instance:furkan.Sprint2SignOutTest@245b4bdc]" started-at="2021-01-25T13:03:14 CST" name="signOut" finished-at="2021-01-25T13:03:37 CST" duration-ms="23163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signOut -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:furkan.Sprint2SignOutTest@245b4bdc]" started-at="2021-01-25T13:03:37 CST" name="teardownMethod" finished-at="2021-01-25T13:03:37 CST" duration-ms="134" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signOut status=SUCCESS method=Sprint2SignOutTest.signOut()[pri:0, instance:furkan.Sprint2SignOutTest@245b4bdc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownMethod -->
-      </class> <!-- furkan.Sprint2SignOutTest -->
-    </test> <!-- furkan smoke Test -->
-  </suite> <!-- Smoke Tests Suite -->
+      </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

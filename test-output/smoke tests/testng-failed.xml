@@ -8,14 +8,6 @@
       </run>
     </groups>
     <classes>
-      <class name="elena.Sprint2EcoFriendlyTest">
-        <methods>
-          <include name="setupMethod"/>
-          <include name="teardownMethod"/>
-          <include name="ecoFriendly"/>
-          <include name="setUpReport"/>
-        </methods>
-      </class> <!-- elena.Sprint2EcoFriendlyTest -->
       <class name="elena.Sprint1ByBrandFiltersCheckTest">
         <methods>
           <include name="setupMethod"/>
@@ -32,14 +24,6 @@
           <include name="setUpReport"/>
         </methods>
       </class> <!-- elena.Sprint1SuvsFiltersCheckTest -->
-      <class name="elena.Sprint2AgeCheckForLoanTest">
-        <methods>
-          <include name="setupMethod"/>
-          <include name="ageCheckForLoan"/>
-          <include name="teardownMethod"/>
-          <include name="setUpReport"/>
-        </methods>
-      </class> <!-- elena.Sprint2AgeCheckForLoanTest -->
     </classes>
   </test> <!-- smoke tests(failed) -->
 </suite> <!-- Failed suite [smoke tests] -->

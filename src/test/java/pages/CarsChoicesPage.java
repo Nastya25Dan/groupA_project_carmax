@@ -101,5 +101,14 @@ public class CarsChoicesPage {
 			@FindBy (id="title")
 			public WebElement cartype;	
 			
+			@FindBy (xpath = "(//button[@class='kmx-button kmx-button--tertiary kmx-button--flat'])[1]")
+			public WebElement keepStoreButton;
+			
+			@FindBy (xpath = "//button[@class='close-accessible-button base-modal--close']")
+			public WebElement closeIcon;
+			
+			
+			
+			
 	
 }

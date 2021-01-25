@@ -20,7 +20,7 @@ public class LoginPage {
 	
 	
 			
-	@FindBy (xpath = "(//img[@class='icon-tile-img loaded tns-complete'])[1]")
+	@FindBy (xpath = "//img[@src='https://www.carmax.com/cars/images/type-icons/sport-utilities.svg']")
 	public WebElement suvsField;
 	
 	@FindBy (xpath = "//img[@src='/cars/images/brand-logos/honda.png']")

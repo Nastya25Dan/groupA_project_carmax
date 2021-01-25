@@ -22,7 +22,7 @@ public class Sprint1ByBrandFiltersCheckTest extends TestBase{
 		assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");
 		
 		int length = cc.recommendedFilters.size();
-		int expectedLength = 23;
+		int expectedLength = 22;
 		assertEquals(length, expectedLength, "Length didn't match");
 		
 }

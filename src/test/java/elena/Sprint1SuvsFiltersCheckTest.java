@@ -23,11 +23,11 @@ public class Sprint1SuvsFiltersCheckTest extends TestBase{
 		jsExecutor.executeScript("arguments[0].click();", lp.suvsField);}
 		catch(Exception e) {}
 		
-		lp.suvsField.click();
+		//lp.suvsField.click();
 		
 		CarsChoicesPage cc = new CarsChoicesPage();
-		try{BrowserUtils.waitForClickablility(cc.popUpHandle, 10);
-		jsExecutor.executeScript("arguments[0].click();", cc.popUpHandle);}
+		try{BrowserUtils.waitForClickablility(cc.keepStoreButton, 10);
+		jsExecutor.executeScript("arguments[0].click();", cc.keepStoreButton);}
 		catch(Exception e) {}
 		
 		BrowserUtils.waitForPageToLoad(5000);
@@ -37,7 +37,7 @@ public class Sprint1SuvsFiltersCheckTest extends TestBase{
 		assertEquals(lengthFilters, expectedLengthFilters, "Length didn't match");
 		
 		
-int length = cc.recommendedFilters.size();
+		int length = cc.recommendedFilters.size();
 		int expectedLength = 28;
 		assertEquals(length, expectedLength, "Length didn't match");
 
